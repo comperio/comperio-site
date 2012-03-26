@@ -1,0 +1,10 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'EditableCheckboxGroupField',
+    'extends' => 'EditableMultipleOptionField',
+  ),
+);
+				$interfaces = array (
+);

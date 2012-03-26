@@ -1,0 +1,15 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'CMSMenu',
+    'extends' => 'Object',
+    'interfaces' => 
+    array (
+      0 => 'IteratorAggregate',
+      1 => 'i18nEntityProvider',
+    ),
+  ),
+);
+				$interfaces = array (
+);

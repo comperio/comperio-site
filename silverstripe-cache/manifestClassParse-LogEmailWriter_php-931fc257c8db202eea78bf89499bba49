@@ -1,0 +1,10 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'SS_LogEmailWriter',
+    'extends' => 'Zend_Log_Writer_Abstract',
+  ),
+);
+				$interfaces = array (
+);

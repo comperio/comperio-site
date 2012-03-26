@@ -1,0 +1,19 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'KickAssetAdmin',
+    'extends' => 'LeftAndMain',
+    'interfaces' => 
+    array (
+      0 => 'PermissionProvider',
+    ),
+  ),
+  1 => 
+  array (
+    'className' => 'KickAssetAdmin_FolderDropdownField',
+    'extends' => 'DropdownField',
+  ),
+);
+				$interfaces = array (
+);

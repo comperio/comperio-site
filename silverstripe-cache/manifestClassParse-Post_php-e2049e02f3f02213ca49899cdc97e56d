@@ -1,0 +1,15 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'Post',
+    'extends' => 'DataObject',
+  ),
+  1 => 
+  array (
+    'className' => 'Post_Attachment',
+    'extends' => 'File',
+  ),
+);
+				$interfaces = array (
+);

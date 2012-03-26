@@ -1,0 +1,25 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'ComplexTableField',
+    'extends' => 'TableListField',
+  ),
+  1 => 
+  array (
+    'className' => 'ComplexTableField_ItemRequest',
+    'extends' => 'TableListField_ItemRequest',
+  ),
+  2 => 
+  array (
+    'className' => 'ComplexTableField_Item',
+    'extends' => 'TableListField_Item',
+  ),
+  3 => 
+  array (
+    'className' => 'ComplexTableField_Popup',
+    'extends' => 'Form',
+  ),
+);
+				$interfaces = array (
+);

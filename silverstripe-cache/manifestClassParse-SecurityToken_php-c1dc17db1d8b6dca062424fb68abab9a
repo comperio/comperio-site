@@ -1,0 +1,15 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'SecurityToken',
+    'extends' => 'Object',
+  ),
+  1 => 
+  array (
+    'className' => 'NullSecurityToken',
+    'extends' => 'SecurityToken',
+  ),
+);
+				$interfaces = array (
+);

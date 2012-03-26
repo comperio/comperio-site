@@ -1,0 +1,14 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'Money',
+    'extends' => 'DBField',
+    'interfaces' => 
+    array (
+      0 => 'CompositeDBField',
+    ),
+  ),
+);
+				$interfaces = array (
+);

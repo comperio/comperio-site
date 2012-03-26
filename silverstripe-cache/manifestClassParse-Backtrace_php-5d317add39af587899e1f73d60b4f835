@@ -1,0 +1,9 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'SS_Backtrace',
+  ),
+);
+				$interfaces = array (
+);

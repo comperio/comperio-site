@@ -1,0 +1,25 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'CMSBatchAction',
+    'extends' => 'Object',
+  ),
+  1 => 
+  array (
+    'className' => 'CMSBatchAction_Publish',
+    'extends' => 'CMSBatchAction',
+  ),
+  2 => 
+  array (
+    'className' => 'CMSBatchAction_Delete',
+    'extends' => 'CMSBatchAction',
+  ),
+  3 => 
+  array (
+    'className' => 'CMSBatchAction_DeleteFromLive',
+    'extends' => 'CMSBatchAction',
+  ),
+);
+				$interfaces = array (
+);

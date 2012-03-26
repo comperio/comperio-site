@@ -1,0 +1,3 @@
+cms:master:master git@github.com/silverstripe/silverstripe-cms.git
+sapphire:master:master git@github.com:silverstripe/sapphire.git
+themes/blackcandy:master git@github.com:silverstripe-themes/silverstripe-blackcandy.git

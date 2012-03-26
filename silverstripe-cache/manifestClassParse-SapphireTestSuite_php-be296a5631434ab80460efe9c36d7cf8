@@ -1,0 +1,10 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'SapphireTestSuite',
+    'extends' => 'PHPUnit_Framework_TestSuite',
+  ),
+);
+				$interfaces = array (
+);

@@ -1,0 +1,10 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'ScaffoldingComplexTableField_Popup',
+    'extends' => 'ComplexTableField_Popup',
+  ),
+);
+				$interfaces = array (
+);

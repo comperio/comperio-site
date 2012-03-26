@@ -1,0 +1,21 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'xmlrpc_client',
+  ),
+  1 => 
+  array (
+    'className' => 'xmlrpcresp',
+  ),
+  2 => 
+  array (
+    'className' => 'xmlrpcmsg',
+  ),
+  3 => 
+  array (
+    'className' => 'xmlrpcval',
+  ),
+);
+				$interfaces = array (
+);

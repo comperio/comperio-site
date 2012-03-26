@@ -1,0 +1,19 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'BlogHolder',
+    'extends' => 'BlogTree',
+    'interfaces' => 
+    array (
+      0 => 'PermissionProvider',
+    ),
+  ),
+  1 => 
+  array (
+    'className' => 'BlogHolder_Controller',
+    'extends' => 'BlogTree_Controller',
+  ),
+);
+				$interfaces = array (
+);

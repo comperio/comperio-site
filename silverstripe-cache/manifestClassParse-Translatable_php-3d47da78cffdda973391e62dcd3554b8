@@ -1,0 +1,19 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'Translatable',
+    'extends' => 'DataObjectDecorator',
+    'interfaces' => 
+    array (
+      0 => 'PermissionProvider',
+    ),
+  ),
+  1 => 
+  array (
+    'className' => 'Translatable_Transformation',
+    'extends' => 'FormTransformation',
+  ),
+);
+				$interfaces = array (
+);

@@ -1,0 +1,10 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'PermissionRole',
+    'extends' => 'DataObject',
+  ),
+);
+				$interfaces = array (
+);

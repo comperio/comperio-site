@@ -1,0 +1,25 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'CMSSiteTreeFilter',
+    'extends' => 'Object',
+  ),
+  1 => 
+  array (
+    'className' => 'CMSSiteTreeFilter_DeletedPages',
+    'extends' => 'CMSSiteTreeFilter',
+  ),
+  2 => 
+  array (
+    'className' => 'CMSSiteTreeFilter_ChangedPages',
+    'extends' => 'CMSSiteTreeFilter',
+  ),
+  3 => 
+  array (
+    'className' => 'CMSSiteTreeFilter_Search',
+    'extends' => 'CMSSiteTreeFilter',
+  ),
+);
+				$interfaces = array (
+);

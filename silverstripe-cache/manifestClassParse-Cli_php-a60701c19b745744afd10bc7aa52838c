@@ -1,0 +1,10 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'SS_Cli',
+    'extends' => 'Object',
+  ),
+);
+				$interfaces = array (
+);

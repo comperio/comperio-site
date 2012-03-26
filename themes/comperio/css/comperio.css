@@ -1,0 +1,193 @@
+/* 
+    Document   : comperio
+    Created on : 14-feb-2012, 11.46.06
+    Author     : giulio
+    Description: comperio site custom css
+*/
+
+html, body {
+    height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -205px;
+}
+footer, .push {
+    height: 205px;
+}        
+
+footer {   
+    background: none repeat scroll 0 0 #252525;
+    border-top: 0 none;
+} 
+         
+body, p {
+    font-family: 'Open sans',"Helvetica Neue",Helvetica,Arial,sans-serif;   
+}
+
+#main {
+    padding: 72px 0 20px 0;    
+}
+
+#main h1, .solutions h2{
+    border-bottom: 1px solid #eee;
+    margin: 0 0 20px;
+}
+
+.userform textarea {
+    width: 260px;
+}
+
+.solutions .thumbnail {
+    padding: 20px;
+}
+
+.navbar .brand {
+    padding: 0 20px 6px;
+}
+
+.navbar .container {
+    padding: 8px 0 2px;
+}
+
+footer .row{
+    padding:0.8em 0 0 0;
+}
+
+footer .row .contacts p{
+    text-align: right;
+    font-size: small;
+    line-height: 15px;
+}
+
+footer h4 {
+    color: #999999;
+}
+footer p {
+    color: #999999;
+}
+footer a {
+    color: #FFFFFF;
+}
+footer a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+footer #footer-floor {
+    background: none repeat scroll 0 0 #1B1B1B;
+}
+footer #footer-floor h3, footer #footer-floor h4 {
+    color: #FFFFFF;
+}
+
+.required{
+    color:red;
+    font-style: italic;
+}
+
+#SearchResults li {
+    border-bottom: 1px solid #eee;
+    padding: 5px 0;
+}
+
+.readMoreLink {
+    display: block;
+}
+
+.blog .postMeta i, .blogSummary i{
+    padding-right: 3px;
+    margin-top: 2px;
+}
+
+.blog #CommentHolder{
+    margin-bottom:20px;
+}
+
+.blog .PageComments {
+    display: block;
+}
+
+.blog .PageComments .postMeta{
+    display:block;
+    text-align:right;
+    margin:0 0 10px 0;
+}
+
+.blog .PageComments .icon-comment{    
+    float:left;
+    margin: 2px 0 0 0;
+}
+
+.blog .PageComments {
+    margin: 10px 0 0;
+    padding: 10px 0px;
+    border-bottom: 1px solid #ddd;
+}
+
+.blog .PageComments .actionLinks{
+    margin: 10px 0;
+}
+
+.blog #CommentsRSSFeed {
+    margin: 20px 0;
+}
+
+.blog #DeleteAllLink {
+    margin:10px 0;
+}
+
+.blog #PageCommentInterface_Form_PostCommentForm fieldset {
+    margin-top:20px;
+}
+
+.blog #PageCommentInterface_Form_PostCommentForm .field{
+    clear: both;
+}
+
+.blog #PageCommentInterface_Form_PostCommentForm .field label{
+    float: left;
+    margin: 5px;
+}
+
+.blog #PageCommentInterface_Form_PostCommentForm .field .middleColumn{
+    margin-left: 140px;
+}
+
+.blog #PageCommentInterface_Form_PostCommentForm .field .middleColumn textarea{
+    min-width:400px;
+    min-height:200px;
+}
+
+.blog #PageCommentInterface_Form_PostCommentForm .Actions input{
+    width:80px;
+}
+
+.announce {
+    position: relative;
+    top:-20px;
+}
+
+.announce h2 {
+    text-align: center;
+    display: block;
+    background-color: #fff;
+    margin: 0 auto;
+    position: relative;
+    top: 34px;
+    
+}
+
+.announce > .row , .announce .thumbnails, .announce .carousel {
+    margin-top:30px;
+}
+
+.customer, .img_grayscale {
+    width:160px;
+}
+
+#main .hero-unit h1 {
+    border-bottom: none;
+    margin: 0;
+}

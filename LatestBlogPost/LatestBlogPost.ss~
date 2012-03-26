@@ -1,0 +1,5 @@
+<ul>
+	<% control blogPosts %>
+		<li><a href="/silverstripe/blog/post">Post a new blog entry</a></li>
+	<% end_control %>
+</ul>

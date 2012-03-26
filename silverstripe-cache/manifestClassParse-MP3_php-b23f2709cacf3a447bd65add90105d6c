@@ -1,0 +1,10 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'MP3',
+    'extends' => 'File',
+  ),
+);
+				$interfaces = array (
+);

@@ -1,0 +1,15 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'DatePickerField',
+    'extends' => 'DateField',
+  ),
+  1 => 
+  array (
+    'className' => 'DatePickerField_Controller',
+    'extends' => 'Controller',
+  ),
+);
+				$interfaces = array (
+);

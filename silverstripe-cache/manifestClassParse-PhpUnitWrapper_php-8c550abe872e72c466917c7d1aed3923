@@ -1,0 +1,26 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'PhpUnitWrapper',
+    'interfaces' => 
+    array (
+      0 => 'IPhpUnitWrapper',
+    ),
+  ),
+  1 => 
+  array (
+    'className' => 'PhpUnitWrapper_Exception',
+    'extends' => 'Exception',
+  ),
+  2 => 
+  array (
+    'className' => 'PHPUnit_Framework_TestCase',
+  ),
+);
+				$interfaces = array (
+  0 => 
+  array (
+    'interfaceName' => 'IPhpUnitWrapper',
+  ),
+);

@@ -1,0 +1,15 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'FieldSet',
+    'extends' => 'DataObjectSet',
+  ),
+  1 => 
+  array (
+    'className' => 'HiddenFieldSet',
+    'extends' => 'FieldSet',
+  ),
+);
+				$interfaces = array (
+);

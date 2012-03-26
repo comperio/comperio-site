@@ -1,0 +1,17 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'SS_Database',
+  ),
+  1 => 
+  array (
+    'className' => 'SS_Query',
+    'interfaces' => 
+    array (
+      0 => 'Iterator',
+    ),
+  ),
+);
+				$interfaces = array (
+);

@@ -1,0 +1,15 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'Aggregate',
+    'extends' => 'ViewableData',
+  ),
+  1 => 
+  array (
+    'className' => 'Aggregate_Relationship',
+    'extends' => 'Aggregate',
+  ),
+);
+				$interfaces = array (
+);

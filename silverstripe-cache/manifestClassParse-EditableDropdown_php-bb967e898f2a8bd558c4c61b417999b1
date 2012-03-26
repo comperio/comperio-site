@@ -1,0 +1,10 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'EditableDropdown',
+    'extends' => 'EditableMultipleOptionField',
+  ),
+);
+				$interfaces = array (
+);

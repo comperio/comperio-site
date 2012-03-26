@@ -1,0 +1,10 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'SS_ZendLog',
+    'extends' => 'Zend_Log',
+  ),
+);
+				$interfaces = array (
+);

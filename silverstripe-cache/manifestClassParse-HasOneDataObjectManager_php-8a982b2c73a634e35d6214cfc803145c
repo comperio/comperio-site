@@ -1,0 +1,15 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'HasOneDataObjectManager',
+    'extends' => 'HasManyDataObjectManager',
+  ),
+  1 => 
+  array (
+    'className' => 'HasOneDataObjectManager_Item',
+    'extends' => 'DataObjectManager_Item',
+  ),
+);
+				$interfaces = array (
+);

@@ -1,0 +1,14 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'SiteConfig',
+    'extends' => 'DataObject',
+    'interfaces' => 
+    array (
+      0 => 'PermissionProvider',
+    ),
+  ),
+);
+				$interfaces = array (
+);

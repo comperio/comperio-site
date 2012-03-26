@@ -1,0 +1,23 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'SSViewer',
+  ),
+  1 => 
+  array (
+    'className' => 'SSViewer_FromString',
+    'extends' => 'SSViewer',
+  ),
+  2 => 
+  array (
+    'className' => 'SSViewer_PartialParser',
+  ),
+  3 => 
+  array (
+    'className' => 'SSViewer_Cached_PartialParser',
+    'extends' => 'SSViewer_PartialParser',
+  ),
+);
+				$interfaces = array (
+);

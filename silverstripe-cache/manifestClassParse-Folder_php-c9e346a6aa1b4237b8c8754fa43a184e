@@ -1,0 +1,15 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'Folder',
+    'extends' => 'File',
+  ),
+  1 => 
+  array (
+    'className' => 'Folder_UnusedAssetsField',
+    'extends' => 'CompositeField',
+  ),
+);
+				$interfaces = array (
+);

@@ -1,0 +1,14 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'Upload',
+    'extends' => 'Controller',
+  ),
+  1 => 
+  array (
+    'className' => 'Upload_Validator',
+  ),
+);
+				$interfaces = array (
+);

@@ -1,0 +1,15 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'DatetimeField',
+    'extends' => 'FormField',
+  ),
+  1 => 
+  array (
+    'className' => 'DatetimeField_Readonly',
+    'extends' => 'DatetimeField',
+  ),
+);
+				$interfaces = array (
+);

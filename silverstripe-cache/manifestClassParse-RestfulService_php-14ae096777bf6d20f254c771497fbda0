@@ -1,0 +1,15 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'RestfulService',
+    'extends' => 'ViewableData',
+  ),
+  1 => 
+  array (
+    'className' => 'RestfulService_Response',
+    'extends' => 'SS_HTTPResponse',
+  ),
+);
+				$interfaces = array (
+);

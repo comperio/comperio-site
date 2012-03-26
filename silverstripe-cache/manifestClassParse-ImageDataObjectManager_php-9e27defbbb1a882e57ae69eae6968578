@@ -1,0 +1,25 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'ImageDataObjectManager',
+    'extends' => 'FileDataObjectManager',
+  ),
+  1 => 
+  array (
+    'className' => 'ImageDataObjectManager_Item',
+    'extends' => 'FileDataObjectManager_Item',
+  ),
+  2 => 
+  array (
+    'className' => 'ImageDataObjectManager_Popup',
+    'extends' => 'FileDataObjectManager_Popup',
+  ),
+  3 => 
+  array (
+    'className' => 'ImageDataObjectManager_ItemRequest',
+    'extends' => 'DataObjectManager_ItemRequest',
+  ),
+);
+				$interfaces = array (
+);

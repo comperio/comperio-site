@@ -1,0 +1,7 @@
+LatestBlogPost Widget 0.0.1 for the SilverStripe Blog Module
+07.06.2009
+By nivanka@whynotonline.com
+
+Released under the BSD license. 
+
+Extract this to your SilverStripe root directory and run "db/build", then visit your blog page and drag and drop the widget to activate. Select the blog from which you need to get the latest post from.

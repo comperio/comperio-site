@@ -1,0 +1,20 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'Widget',
+    'extends' => 'DataObject',
+  ),
+  1 => 
+  array (
+    'className' => 'Widget_Controller',
+    'extends' => 'Controller',
+  ),
+  2 => 
+  array (
+    'className' => 'Widget_TreeDropdownField',
+    'extends' => 'TreeDropdownField',
+  ),
+);
+				$interfaces = array (
+);

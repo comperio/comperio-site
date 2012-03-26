@@ -1,0 +1,13 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'SS_LogErrorEmailFormatter',
+    'interfaces' => 
+    array (
+      0 => 'Zend_Log_Formatter_Interface',
+    ),
+  ),
+);
+				$interfaces = array (
+);

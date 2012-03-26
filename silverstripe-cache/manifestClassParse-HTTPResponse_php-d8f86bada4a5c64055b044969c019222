@@ -1,0 +1,14 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'SS_HTTPResponse',
+  ),
+  1 => 
+  array (
+    'className' => 'SS_HTTPResponse_Exception',
+    'extends' => 'Exception',
+  ),
+);
+				$interfaces = array (
+);

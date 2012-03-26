@@ -1,0 +1,15 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'ForumRole',
+    'extends' => 'DataObjectDecorator',
+  ),
+  1 => 
+  array (
+    'className' => 'ForumRole_Validator',
+    'extends' => 'Extension',
+  ),
+);
+				$interfaces = array (
+);

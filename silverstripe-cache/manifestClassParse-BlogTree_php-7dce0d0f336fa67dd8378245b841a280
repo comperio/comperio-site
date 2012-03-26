@@ -1,0 +1,15 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'BlogTree',
+    'extends' => 'Page',
+  ),
+  1 => 
+  array (
+    'className' => 'BlogTree_Controller',
+    'extends' => 'Page_Controller',
+  ),
+);
+				$interfaces = array (
+);

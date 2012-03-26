@@ -1,0 +1,13 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'MySQLDatabaseConfigurationHelper',
+    'interfaces' => 
+    array (
+      0 => 'DatabaseConfigurationHelper',
+    ),
+  ),
+);
+				$interfaces = array (
+);

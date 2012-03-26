@@ -1,0 +1,10 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'SS_HTMLValue',
+    'extends' => 'ViewableData',
+  ),
+);
+				$interfaces = array (
+);

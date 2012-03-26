@@ -1,0 +1,15 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'ForumReport_MemberSignups',
+    'extends' => 'SS_Report',
+  ),
+  1 => 
+  array (
+    'className' => 'ForumReport_MonthlyPosts',
+    'extends' => 'SS_Report',
+  ),
+);
+				$interfaces = array (
+);

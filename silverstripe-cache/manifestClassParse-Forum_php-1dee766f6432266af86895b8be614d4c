@@ -1,0 +1,15 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'Forum',
+    'extends' => 'Page',
+  ),
+  1 => 
+  array (
+    'className' => 'Forum_Controller',
+    'extends' => 'Page_Controller',
+  ),
+);
+				$interfaces = array (
+);

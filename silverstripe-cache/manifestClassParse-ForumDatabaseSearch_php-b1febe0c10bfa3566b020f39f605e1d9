@@ -1,0 +1,13 @@
+<?php
+				$classes = array (
+  0 => 
+  array (
+    'className' => 'ForumDatabaseSearch',
+    'interfaces' => 
+    array (
+      0 => 'ForumSearchProvider',
+    ),
+  ),
+);
+				$interfaces = array (
+);
