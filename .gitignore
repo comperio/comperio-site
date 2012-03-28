@@ -1,3 +1,4 @@
 /silverstripe-cache/*
 /assets/*
 .idea/*
+/mysite/_config.php
