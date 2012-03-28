@@ -66,13 +66,15 @@
                 </div>
                 <div class="span8">
                 <div class="hero-unit">
-                    <h1>Questo è il titolo di un post del blog</h1>
-                    <p>E questo è un estratto del primo paragrafo del post, consectetur adipiscing elit. Aliquam in mauris enim. Pellentesque eget ante lectus, id vestibulum nisi. Aliquam ut tempus tellus. </p>
+                    <% control LastPosts %>
+                    <h1>$Title</h1>
+                    <p>$Content.LimitCharacters(500)</p>
                     <p>
                     <a class="btn btn-primary btn-large pull-right">
                         Leggi tutto
                     </a>
                     </p>
+                    <% end_control %>
                 </div>
                 </div>
             </div>

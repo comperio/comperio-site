@@ -47,7 +47,49 @@
  * @license http://www.gnu.org/licenses/agpl.html GNU Affero General Public License
  * @version $Id$
  */
-class SolutionPage
+class SolutionPage extends Page
+{
+    public static $db = array(
+        "LinkedTags" => "Text"
+    );
+
+    function getCMSFields()
+    {
+        $fields = parent::getCMSFields();
+        $fields->addFieldToTab("Root.Content.Main", new TextField("LinkedTags", _t("SolutionPage.LinkedTags", "Linked Tags (comma sep.)"),""));
+
+        return $fields;
+    }
+
+    /**
+     * Returns all blog entries that have at least one tag that is included in
+     * LinkedTags property
+     *
+     * @param int $limit
+     * @return DataObjectSet|mixed
+     */
+    public function LinkedBlogEntries($limit = 10)
+    {
+        if (!$this->LinkedTags)
+            return new DataObjectSet();
+
+        $tags = explode(',', $this->LinkedTags);
+
+        $sqlTagsClauses = array_map(function($tag)
+        {
+            $tag = Convert::raw2sql(trim($tag));
+            return sprintf("Tags LIKE '%%%s%%'", $tag);
+        }, $tags);
+
+        $sqlTagsClause = implode(' OR ', $sqlTagsClauses);
+
+        $blogEntries = DataObject::get('BlogEntry', $sqlTagsClause, 'Date DESC', '', $limit);
+
+        return $blogEntries;
+    }
+}
+
+class SolutionPage_Controller extends Page_Controller
 {
 
 }

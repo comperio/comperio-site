@@ -36,4 +36,15 @@ class HomePage_Controller extends Page_Controller {
 		// included so that our older themes still work
 
 	}
+
+    /**
+     * Returns the $limit last posts in the blog
+     *
+     * @param int $limit
+     * @return DataObjectSet
+     */
+    public function LastPosts($limit = 1)
+    {
+        return DataObject::get('BlogEntry', '', 'Date DESC', '', $limit);
+    }
 }
