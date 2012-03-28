@@ -84,3 +84,76 @@ a#unpublishpost{
     display:block;
     height: 28px;
 }
+
+.blog .postMeta i, .blogSummary i{
+    padding-right: 3px;
+    margin-top: 2px;
+}
+
+.blog #CommentHolder{
+    margin-bottom:20px;
+}
+
+.blog .PageComments {
+    display: block;
+}
+
+.blog .PageComments .postMeta{
+    display:block;
+    margin:0 0 10px 0;    
+}
+
+.blog .PageComments .postMeta span{
+	display: block;
+	padding: 2px;
+}
+
+.blog .PageComments .icon-comment{    
+    float:left;
+    padding: 0 2px;
+    margin: 0 2px;
+}
+
+.blog .PageComments {
+    margin: 10px 0 0;
+    padding: 10px 0px;
+    border-bottom: 1px solid #ddd;
+}
+
+.blog .PageComments .actionLinks{
+    margin: 10px 0;
+}
+
+.blog #CommentsRSSFeed {
+    margin: 20px 0;
+}
+
+.blog #DeleteAllLink {
+    margin:10px 0;
+}
+
+.blog #PageCommentInterface_Form_PostCommentForm fieldset {
+    margin-top:20px;
+}
+
+.blog #PageCommentInterface_Form_PostCommentForm .field{
+    clear: both;
+}
+
+.blog #PageCommentInterface_Form_PostCommentForm .field label{
+    float: left;
+    margin: 5px;
+}
+
+.blog #PageCommentInterface_Form_PostCommentForm .field .middleColumn{
+    margin-left: 140px;
+}
+
+.blog #PageCommentInterface_Form_PostCommentForm .field .middleColumn textarea{
+    min-width:400px;
+    min-height:200px;
+}
+
+.blog #PageCommentInterface_Form_PostCommentForm .Actions input{
+    width:80px;
+}

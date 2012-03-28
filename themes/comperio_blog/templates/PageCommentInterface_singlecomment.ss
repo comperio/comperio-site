@@ -1,4 +1,3 @@
-<i class="icon-comment"></i>
 <em class="postMeta">		
     <span rel="tooltip" title="Posted by"><i class="icon-user"></i>
 	    <% if CommenterURL %>
@@ -11,6 +10,7 @@
 </em>
 
 <div class="comment" id="PageComment_$ID">
+	<i class="icon-comment"></i>
 	<% if bbCodeEnabled %>
 		$ParsedBBCode	
 	<% else %>
