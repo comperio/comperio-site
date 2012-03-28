@@ -7,9 +7,9 @@ global $databaseConfig;
 $databaseConfig = array(
 	"type" => 'MySQLDatabase',
 	"server" => 'localhost',
-	"username" => 'root',
-	"password" => 'uelso4eg',
-	"database" => 'SS_comperio',
+	"username" => '',
+	"password" => '',
+	"database" => '',
 	"path" => '',
 );
 
