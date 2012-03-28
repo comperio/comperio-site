@@ -60,7 +60,7 @@
                         var el = $(this);
                         el.css({"position":"absolute"}).wrap("<div class='img_wrapper' style='display: inline-block'>").clone().addClass('img_grayscale').css({"position":"absolute","z-index":"998","opacity":"0"}).insertBefore(el).queue(function(){
                             var el = $(this);
-                            el.parent().css({"width":160,"height":this.height});
+                            el.parent().css({"width":160,"height":107});
                             el.dequeue();
                         });
                         this.src = grayscale(this.src);
