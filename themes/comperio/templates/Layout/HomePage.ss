@@ -11,28 +11,35 @@
                         <img alt="" src="themes/comperio/img/comperio1.jpg">
                         <div class="carousel-caption">
                             <h4>Passione per l'innovazione</h4>
-                            <p>Cerchiamo sempre di sviluppare soluzioni con il sorriso ;)</p>
+                            <p>Per noi questo significa rendere concrete <strong>idee</strong> grazie all'impegno di una <strong>squadra</strong> che 
+                            vede unite le competenze di <strong>bibliotecari</strong> e <strong>informatici</strong>. Affrontando le difficoltà e gli ostacoli come 
+                            nuove sfide in grado di farci <strong>crescere</strong>.</p>
                         </div>
                     </div>
                     <div class="item">
                         <img alt="" src="themes/comperio/img/Biblioteca.jpg">
                         <div class="carousel-caption">
                             <h4>Soluzioni per le biblioteche</h4>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p>Realizzare un progetto vuol dire innanzitutto intraprendere un <strong>percorso</strong> i cui veri protagonisti
+                            sono i <strong>bibliotecari</strong> e la <strong>comunità di utenti</strong>. È solo grazie a loro che siamo in grado
+                            di continuare a sviluppare <strong>soluzioni di qualità</strong>.</p>
                         </div>
                     </div>
                     <div class="item">
                         <img alt="" src="themes/comperio/img/clavis.png">
                         <div class="carousel-caption">
-                            <h4>Third Thumbnail label</h4>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <h4>Clavis NG</h4>
+                            <p>Sviluppato a partire dal 2003 è un software <strong>web based</strong> pensato per gestire in modo <strong>efficiente e completo</strong> una 
+                            <strong>rete di biblioteche</strong>. Dal 2010 è rilasciato con licenza <strong>open source</strong> &quot;Affero GPL v.3&quot;.</p>
                         </div>
                     </div>
                     <div class="item">
                         <img alt="" src="themes/comperio/img/dng.png">
                         <div class="carousel-caption">
-                            <h4>Third Thumbnail label</h4>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <h4>Discovery NG</h4>
+                            <p>Un <strong>OPAC sociale</strong> in grado di integrare le funzioni necessarie alla gestione di: <strong>catalogo</strong>, <strong>sito della biblioteca</strong>,
+                            <strong>comunità degli utenti</strong>. A partire dal 2011 è stato completamente riscritto a partire dal <strong>CMS</strong> open source <strong>SilverStripe</strong>.
+                            </p>
                         </div>
                     </div>
 

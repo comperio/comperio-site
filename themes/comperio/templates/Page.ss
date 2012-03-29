@@ -31,7 +31,7 @@
         <script type="text/javascript">
             (function($) {
                 if ($('#myCarousel').length > 0){
-                    $('#myCarousel').carousel('pause');
+                    $('#myCarousel').carousel({interval:15000},'pause');
                 };
                 if ($('.postMeta').length > 0){
                     $(".postMeta").tooltip({
@@ -44,7 +44,7 @@
                     $(".alert").alert();
                 };
                 
-                $('.announce .thumbnails li').popover({
+                $('.thumbnails li').popover({
                     selector: "div[rel=popover]",
                     placement: "left"
                 });
