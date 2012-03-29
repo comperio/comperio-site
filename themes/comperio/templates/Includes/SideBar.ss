@@ -1,19 +1,28 @@
 <div style="padding: 8px 0;" class="well">
 <ul class="nav nav-list">
-    <li  class="nav-header">
+    <li class="nav-header">
         <% control Level(1) %>
         $Title
         <% end_control %>
     </li>
-    <li>
-        <a href="#">
-            <% control Menu(2) %>	  
+    <% control Menu(2) %>
+        <% if Children %>
             <li class='<% if LinkOrCurrent = current %>active<% end_if %>'>
                 <a href="$Link" title="Go to the $Title.XML page">$Title.XML</a>
+                <ul>
+                    <% control Children %>
+                        <li <% if LinkOrCurrent = current %>class='active'<% end_if %>>
+                            <a href="$Link" title="Go to the $Title.XML page">$Title.XML</a>
+                        </li>
+                    <% end_control %>
+                </ul>
             </li>
-            <% end_control %>
-        </a>
-    </li>
+        <% else %>
+            <li <% if LinkOrCurrent = current %>class='active'<% end_if %>>
+                <a href="$Link" title="Go to the $Title.XML page">$Title.XML</a>
+            </li>
+        <% end_if %>
+    <% end_control %>
 </ul>
 </div>
 

@@ -1,22 +1,23 @@
 <div class="homepage container" role="main" id="main">
-    <div class="row clear announce">
-    <h2 style="width: 280px;">Chi siamo</h2>
-            <hr/>
-        <div class="span8 offset2">        
+    <div class="row clear">    
+        <div class="span4">        
+            $Content
+        </div>
+        <div class="span8">
             <div id="myCarousel" class="carousel slide">
                 <!-- Carousel items -->
                 <div class="carousel-inner">
                     <div class="item active">
                         <img alt="" src="themes/comperio/img/comperio1.jpg">
                         <div class="carousel-caption">
-                            <h4>First Thumbnail label</h4>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <h4>Passione per l'innovazione</h4>
+                            <p>Cerchiamo sempre di sviluppare soluzioni con il sorriso ;)</p>
                         </div>
                     </div>
                     <div class="item">
                         <img alt="" src="themes/comperio/img/Biblioteca.jpg">
                         <div class="carousel-caption">
-                            <h4>Second Thumbnail label</h4>
+                            <h4>Soluzioni per le biblioteche</h4>
                             <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                         </div>
                     </div>
@@ -42,49 +43,23 @@
             </div>
 
         </div>
-        <!-- <div class="span4">
-            <p style="font-size: x-large;margin-bottom: 20px">Biblioteche</p>
-            <p style="font-size: x-large;margin-bottom: 20px">Innovazione</p>
-            <p style="font-size: x-large;margin-bottom: 20px">Servizi</p>
-            <p style="font-size: x-large;margin-bottom: 20px">Open source</p>
-
-            <p>Comperio rafforza ulteriormente le relazioni con i propri partners tecnologici,
-                per poter fornire soluzioni complete alle biblioteche: 
-                dall'accesso controllato ad internet ai servizi informativi via SMS, 
-                dalle soluzioni RFID ai distributori di libri self service H24, d
-                alla consulenza nella pianificazione e organizzazione dei servizi alla formazione delle risorse umane.</p>
-
-        </div> -->
     </div>
-    <div class="row clear announce">
-        <div class="span12">
-            <h2 style="width: 180px;">Cosa facciamo</h2>
-            <hr/>            
-            <div class="row" style="margin-top:30px;">
-                <div class="span4">
-                $Content
-                </div>
-                <div class="span8">
-                <div class="hero-unit">
-                    <% control LastPosts %>
-                    <h1>$Title</h1>
-                    <p>$Content.LimitCharacters(500)</p>
-                    <p>
-                    <a class="btn btn-primary btn-large pull-right">
-                        Leggi tutto
-                    </a>
-                    </p>
-                    <% end_control %>
-                </div>
-                </div>
+    <div class="row clear">           
+        <div class="span8">
+            <div class="hero-unit">
+                <% control LastPosts %>
+                <p class="postDate" rel="tooltip" title="Date posted"><i class="icon-calendar"></i>$Date.Long</p>
+                <h2>$Title</h2>
+                <p>$Content.LimitCharacters(500)</p>
+                <p>
+                <a class="btn btn-primary btn-large pull-right" href="$Link" title="Read Full Post">
+                    Leggi tutto ...
+                </a>
+                </p>
+                <% end_control %>
             </div>
-                
-        </div>        
-    </div>
-    <div class="row clear announce">
-        <div class="span12">
-            <h2 style="width: 280px;">Con chi</h2>
-            <hr/>
+        </div> 
+        <div class="span4">            
             <ul class="thumbnails">
                 <li class="span2">
                     <div class="thumbnail" rel="popover" title="Provincia di Verona" data-content="Sistema Bibliotecario della Provincia di Verona. Gestione del Centro Servizi e del sistema di automazione">
@@ -118,6 +93,7 @@
                 </li>
             </ul>
             <button class="pull-right btn btn-mini btn-warning">...vedi tutti</button>
-        </div>
+        </div>   
     </div>
+    
 </div>

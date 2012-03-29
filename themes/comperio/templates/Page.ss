@@ -35,7 +35,7 @@
                 };
                 if ($('.postMeta').length > 0){
                     $(".postMeta").tooltip({
-                        selector: "li[rel=tooltip]",
+                        selector: "*[rel=tooltip]",
                         placement: "left"
                     });
                 };
@@ -46,7 +46,7 @@
                 
                 $('.announce .thumbnails li').popover({
                     selector: "div[rel=popover]",
-                    placement: "top"
+                    placement: "left"
                 });
 
                 // On window load. This waits until images have loaded which is essential

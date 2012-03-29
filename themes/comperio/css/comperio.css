@@ -101,7 +101,8 @@ footer #footer-floor h3, footer #footer-floor h4 {
     top:-20px;
 }
 
-.announce h2 {
+/* old stuff for a title + hr */
+.announce h3 {
     text-align: center;
     display: block;
     background-color: #fff;
@@ -110,8 +111,7 @@ footer #footer-floor h3, footer #footer-floor h4 {
     top: 34px;
     
 }
-
-.announce > .row , .announce .thumbnails, .announce .carousel {
+.homepage > .row {
     margin-top:30px;
 }
 
@@ -119,7 +119,62 @@ footer #footer-floor h3, footer #footer-floor h4 {
     width:160px;
 }
 
+#main .hero-unit .postDate {
+  float:right;
+  position: relative;
+  top:-35px;
+  vertical-align: top;
+}
+
+#main .hero-unit .postDate i{
+  margin: 6px 5px 0;
+}
+
 #main .hero-unit h1 {
     border-bottom: none;
     margin: 0;
+}
+
+/* Add third level to nav-list menu */
+
+.nav > li > a > ul > li > a {
+  display: block;
+}
+.nav > li > a:hover {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+.nav .nav-header {
+  display: block;
+  padding: 3px 15px;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #999999;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+}
+.nav li + .nav-header {
+  margin-top: 9px;
+}
+.nav-list {
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-bottom: 0;
+}
+.nav-list > li > a, .nav-list .nav-header {
+  margin-left: -15px;
+  margin-right: -15px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.nav-list > li > a {
+  padding: 3px 15px;
+}
+.nav-list .active > a, .nav-list .active > a:hover {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  background-color: #0088cc;
+}
+.nav-list [class^="icon-"] {
+  margin-right: 2px;
 }

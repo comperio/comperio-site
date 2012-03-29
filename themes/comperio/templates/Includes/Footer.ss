@@ -55,12 +55,15 @@
                         +39 0425 072294 - <a href="mailto:info@comperio.it">info@comperio.it</a>
                     </h3>
                     <p>
-                        &copy; 2011 <a title="some" href="http://www.comperio.it">Comperio srl</a>. Some Rights Reserved.
-                        &nbsp;<a href="/terms">Terms</a>&nbsp;&amp;&nbsp;<a href="/privacy">Privacy</a>.
+                        &copy; 2011 <a title="Comperio srl" href="http://www.comperio.it">Comperio srl</a>. Some Rights Reserved.
+                        <!-- &nbsp;<a href="/terms">Terms</a>&nbsp;&amp;&nbsp;<a href="/privacy">Privacy</a>. -->
                     </p>
                 </div>
                 <div class="span3">
-                    <h4>Stay in touch:</h4>
+                    <h4>
+                    Stay in touch on <a href="https://www.facebook.com/pages/Comperio-srl/155850194478791" title="Comperio on Facebook">
+                    Facebook</a>
+                    </h4>
                 </div>                        
             </div>
         </div>
