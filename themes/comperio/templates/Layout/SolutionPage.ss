@@ -15,7 +15,7 @@
             <% include SideBar %>
             <% end_if %>
 
-
+            <% if LinkedBlogEntries %>
             <div style="padding: 18px 0;">
                 <h3>Ultimi post nel blog</h3>
                 <% control LinkedBlogEntries %>
@@ -29,6 +29,7 @@
                     </div>
                 <% end_control %>
             </div>
+            <% end_if %>
         </div>
     </div>
 </div>

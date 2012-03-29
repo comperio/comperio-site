@@ -42,7 +42,7 @@
                     <br/>L’alta efficienza e la versatilità di questi elementi consentono di eludere e fronteggiare il problema dei furti nelle biblioteche.</p>                
                 </div>
             </div>
-            <div class="row" style="margin-top:10px">                    
+            <div class="row" style="margin-top:10px">
                 <div class="span4">
                     <h2>La famiglia Bookmark</h2>
                     <dl>
@@ -68,20 +68,7 @@
             </div>
             
 
-            <h2>Servizi di formazione e consulenza</h2>
-            <p>La formazione del personale e degli operatori è una delle principali attività svolte da Comperio. Oltre ai corsi tenuti presso i nostri clienti, nel corso degli anni abbiamo svolto attività formativa sia in ambito IT che in ambito biblioteconomico.
-            <br/>Ad esempio:</p>
-            <ul>
-                <li>2002 - Università di Messina - La catalogazione del libro antico. Il formato Unimarc</li>
-                <li>2002 - Roma. AIB Nazionale - Unimarc e la catalogazione del libro antico</li>
-                <li>2005 - Università di Padova - Unimarc Bibliographic Format</li>
-                <li>2005 - Università di Milano Bicocca - La catalogazione delle Risorse in continuazione</li>
-                <li>2007 - Firenze. AIB Nazionale. - La catalogazione del libro antico: il formato UNIMARC/Bibliographic </li>
-                <li>2008 - Università di Milano Bicocca - La valorizzazione del fondo storico-giuridico dell'Università Bicocca: strumenti e strategie</li>
-            </ul>
-            
-            <p>Inoltre svogliamo anche attività di consulenza nell'ambito dell'IT che in quello più strettamente biblioteconomico.</p>
-
+            $Content
         </div>
         <div class="span3">
             <% if Menu(2) %>

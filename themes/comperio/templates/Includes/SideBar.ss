@@ -7,7 +7,7 @@
     </li>
     <% control Menu(2) %>            
         <li <% if LinkOrCurrent = current %>class='active'<% end_if %>>
-            <a href="$Link" title="Go to the $Title.XML page">$Title.XML</a>
+            <a href="$Link" title="Go to the $MenuTitle.XML page">$MenuTitle.XML</a>
         </li>
     <% end_control %>
 </ul>

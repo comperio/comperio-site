@@ -12,7 +12,7 @@
         <ul class="nav nav-pills">
             <% control Menu(1) %>	  
             <li class='<% if LinkOrCurrent = current %>active<% end_if %> <% if Children %>dropdown<% end_if %>'>
-                    <a href="$Link" title="Go to the $Title.XML page" <% if Children %>class="dropdown-toggle" data-toggle="dropdown"<% end_if %>>$MenuTitle.XML<% if Children %><b class="caret"></b><% end_if %></a>
+                    <a href="<% if Children %>#<% else %>$Link<% end_if %>" title="Go to the $Title.XML page" <% if Children %>class="dropdown-toggle" data-toggle="dropdown"<% end_if %>>$MenuTitle.XML<% if Children %><b class="caret"></b><% end_if %></a>
                     <% if Children %>
                     <ul class="dropdown-menu">
                         <% control Children %>
