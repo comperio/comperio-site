@@ -20,10 +20,13 @@ MySQLDatabase::set_connection_charset('utf8');
 SSViewer::set_theme('comperio');
 
 // Set the site locale
-i18n::set_locale('en_US');
+i18n::set_locale('it_IT');
 
 // enable nested URLs for this site (e.g. page/sub-page/)
 SiteTree::enable_nested_urls();
 
 //Enable site search
 FulltextSearchable::enable();
+
+// Logging
+SS_Log::add_writer(new SS_LogFileWriter(__DIR__.'/../logs/silverstripe.log'), SS_Log::NOTICE, '<=');
