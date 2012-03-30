@@ -8,8 +8,7 @@
             <style type="text/css">
                 #wrap {display:table;height:100%}
             </style>
-        <![endif]-->
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+        <![endif]-->        
 
     </head>
     <body>
