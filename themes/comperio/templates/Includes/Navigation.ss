@@ -28,7 +28,7 @@
 
         <ul class="nav pull-right">
         <% if CurrentMember %>
-            <li><a href="#">Ciao $CurrentMember.FirstName</a></li>
+            <li><a href="admin">Ciao $CurrentMember.FirstName</a></li>
         <% else %>
             <li><a href="admin">Login</a></li>
         <% end_if %>
