@@ -2,3 +2,4 @@
 /assets/*
 .idea/*
 /mysite/_config.php
+/logs/*
