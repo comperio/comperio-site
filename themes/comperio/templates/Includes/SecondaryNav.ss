@@ -6,4 +6,5 @@
 	    </li>
 	<% end_control %>
 	</ul>
+	<h2>$Title</h2>
 <% end_if %>

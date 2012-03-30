@@ -1,23 +1,24 @@
+?
 <footer>
     <div class="container">
         <div class="row">
             <div class="span2">
                 <h6>About</h6>
                 <ul class="unstyled">
-                    <li><a href="#">Mission</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Partners</a></li>
-                    <li><a href="#">Clients</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a href="l-azienda">L'azienda</a></li>
+                    <li><a href="team">Team</a></li>
+                    <li><a href="partners">Partners</a></li>
+                    <li><a href="clienti">Clienti</a></li>
+                    <li><a href="contatti">Contatti</a></li>
                 </ul>
             </div>
             <div class="span2">
                 <h6>Solutions</h6>
                 <ul class="unstyled">
-                    <li><a href="#">ClavisNG</a></li>
-                    <li><a href="#">DiscoveryNG</a></li>
-                    <li><a href="#">BookmarkWeb</a></li>
-                    <li><a href="#">RFID</a></li>
+                    <li><a href="clavisng">ClavisNG</a></li>
+                    <li><a href="discoveryng">DiscoveryNG</a></li>
+                    <li><a href="bookmarkweb">BookmarkWeb</a></li>
+                    <li><a href="rfid">RFID</a></li>
                 </ul>
             </div>
             <div class="span3" id="SearchForm" method="get">
