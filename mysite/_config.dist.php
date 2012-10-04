@@ -30,3 +30,15 @@ FulltextSearchable::enable();
 
 // Logging
 SS_Log::add_writer(new SS_LogFileWriter(__DIR__.'/../logs/silverstripe.log'), SS_Log::NOTICE, '<=');
+
+HtmlEditorConfig::get('cms')->setOption('valid_elements','*[*]');
+HtmlEditorConfig::get('cms')->setOption('extended_valid_elements', str_replace('img[', 'img[style|', HtmlEditorConfig::get('cms')->getOption('extended_valid_elements')));
+
+// Recaptcha api keys
+RecaptchaField::$public_api_key = '';
+RecaptchaField::$private_api_key = '';
+//Integrate with spam protector
+SpamProtectorManager::set_spam_protector("RecaptchaProtector");
+
+//Add featured image to blog entry
+DataObject::add_extension('BlogEntry', 'BlogEntryDecorator');

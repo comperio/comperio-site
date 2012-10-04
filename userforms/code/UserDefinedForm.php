@@ -258,7 +258,7 @@ class UserDefinedForm_Controller extends Page_Controller {
 		Validator::set_javascript_validation_handler('none');
 		
 		// load the jquery
-		Requirements::javascript(SAPPHIRE_DIR .'/thirdparty/jquery/jquery.js');
+		//Requirements::javascript(SAPPHIRE_DIR .'/thirdparty/jquery/jquery.js');
 		Requirements::javascript('userforms/thirdparty/jquery-validate/jquery.validate.min.js');
 	}
 	

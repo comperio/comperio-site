@@ -1,5 +1,5 @@
 <div class="blog container" role="main" id="main">
-    <div class="row">
+    <div class="row-fluid">
         <div id="BlogContent" class="span9">
 
             <% include BreadCrumbs %>
@@ -7,11 +7,14 @@
             <h1>Blog</h1>
             
             <div class="blogEntry">
-                <div class="row">
-                    <div class="span6">
+                <div class="row-fluid">
+                    <div class="span8">
+                        <% if AttachedImage %>
+                            <% control AttachedImage %><img class="featuredImage" src="$SetWidth(150).URL" alt="$Title" /><% end_control %>
+                        <% end_if %> 
                         <h2 class="postTitle">$Title</h2>
                     </div>
-                    <div class="span3">
+                    <div class="span4">
                         <ul class="postMeta unstyled">
                             <li rel="tooltip" title="Date posted"><i class="icon-calendar"></i>$Date.Long</li>
                             <li rel="tooltip" title="Posted by"><i class="icon-user"></i>$Author.XML</li>
@@ -34,6 +37,9 @@
                         $Content
                     </div>                    
                 </div>
+		<% control getAddThisWidget %>
+			<% include WidgetHolder %>
+		<% end_control %>
 
 
             </div>

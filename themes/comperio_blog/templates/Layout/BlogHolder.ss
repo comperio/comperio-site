@@ -1,5 +1,5 @@
 <div class="blog container" role="main" id="main">
-    <div class="row">
+    <div class="row-fluid">
         <div id="BlogContent" class="span9">
 
             <% include BreadCrumbs %>

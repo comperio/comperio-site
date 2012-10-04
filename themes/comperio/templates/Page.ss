@@ -2,13 +2,20 @@
 <html>
     <head>
         <% base_tag %>
+        <title>$Title &raquo; $SiteConfig.Title</title>
+        $MetaTags(false)
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <% require css(themes/comperio/css/bootstrap.css) %>
         <% require css(themes/comperio/css/comperio.css) %>
         <!--[if !IE 7]>
             <style type="text/css">
                 #wrap {display:table;height:100%}
             </style>
-        <![endif]-->        
+        <![endif]-->
+        
+        <link rel="shortcut icon" href="/favicon.ico" />
+
+
 
     </head>
     <body>
@@ -39,14 +46,18 @@
                     });
                 };
 
+                $(".collapse").collapse();
+
                 if ($('.alert').length > 0){
                     $(".alert").alert();
                 };
                 
-                $('.thumbnails li').popover({
-                    selector: "div[rel=popover]",
-                    placement: "left"
-                });
+                if ($('.thumbnails li').length > 0){
+                    $('.thumbnails li').popover({
+                        selector: "div[rel=popover]",
+                        placement: "left"
+                    });
+                };
 
                 // On window load. This waits until images have loaded which is essential
                 $(window).load(function(){

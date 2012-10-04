@@ -27,6 +27,11 @@ body, p {
     font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
 }
 
+#myCarousel em{
+  float:right;
+  color:#fff;
+}
+
 #main {
     padding: 72px 0 20px 0;    
 }
@@ -111,7 +116,7 @@ footer #footer-floor h3, footer #footer-floor h4 {
     top: 34px;
     
 }
-.homepage > .row {
+.homepage > .row-fluid {
     margin-top:30px;
 }
 
@@ -127,7 +132,7 @@ footer #footer-floor h3, footer #footer-floor h4 {
 }
 
 #main .hero-unit .postDate i{
-  margin: 6px 5px 0;
+  margin: 4px 5px 0;
 }
 
 #main .hero-unit h1 {

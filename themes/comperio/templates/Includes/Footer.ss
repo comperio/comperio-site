@@ -1,4 +1,4 @@
-<footer>
+<footer class="hidden-phone">
     <div class="container">
         <div class="row">
             <div class="span2">
@@ -21,7 +21,9 @@
                 </ul>
             </div>
             <div class="span3" id="SearchForm" method="get">
-                <h6>Cerca nel sito</h6>
+		<h6>Helpdesk</h6>
+                <a href="https://comperiosrl.zendesk.com/" title="Comperio @ Zendesk" target="_blank">Vai alla piattaforma di assistenza clienti</a>
+                <h6 style="margin-top:15px">Cerca nel sito</h6>
                 <form class="form-search" action="$URLSegment/SearchForm">
                     <input type="text" class="input-medium search-query" name="Search">
                     <button type="submit" class="btn" name="action_results" title="Search">
@@ -61,7 +63,7 @@
                 </div>
                 <div class="span3">
                     <h4>
-                    Stay in touch on <a href="https://www.facebook.com/pages/Comperio-srl/155850194478791" title="Comperio on Facebook">
+                    Seguici su <a href="https://www.facebook.com/pages/Comperio-srl/155850194478791" title="Comperio @ Facebook">
                     Facebook</a>
                     </h4>
                 </div>                        

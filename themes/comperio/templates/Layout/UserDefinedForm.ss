@@ -1,5 +1,5 @@
 <div class="userform container" role="main" id="main">
-    <div class="row">
+    <div class="row-fluid">
         <div class="span9">
             <h1>$Title</h1>
             $Content

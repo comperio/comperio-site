@@ -5,6 +5,10 @@
 	text-align: left;
 }*/
 
+#BlogContent .blogEntry{
+	margin-bottom:20px;
+}
+
 .BlogError {
 	text-align: center;
 }
@@ -79,6 +83,14 @@ a#unpublishpost{
 	padding: 3px 0 3px 25px;
 }
 
+.featuredImage{
+	padding:8px 8px 8px 0;
+	max-width:150px;
+}
+.blogSummary .featuredImage{
+	float:right;
+}
+
 .ownerAction{
     margin:10px 0;
     display:block;
@@ -128,6 +140,15 @@ a#unpublishpost{
     margin: 20px 0;
 }
 
+.blog .blogEntry .addthisWidget h3 {
+	float: left;
+	margin: 10px 20px 0 0;
+}
+
+.blog .blogEntry .addthisWidget #addThisWidget{
+padding: 12px 0 0 0;
+}
+
 .blog #DeleteAllLink {
     margin:10px 0;
 }
@@ -140,20 +161,23 @@ a#unpublishpost{
     clear: both;
 }
 
-.blog #PageCommentInterface_Form_PostCommentForm .field label{
+.blog #PageCommentInterface_Form_PostCommentForm .field > label{
     float: left;
     margin: 5px;
 }
 
-.blog #PageCommentInterface_Form_PostCommentForm .field .middleColumn{
-    margin-left: 140px;
+.blog #PageCommentInterface_Form_PostCommentForm .field .middleColumn, .blog #PageCommentInterface_Form_PostCommentForm #Captcha, .blog #PageCommentInterface_Form_PostCommentForm .Actions input{
+    margin-left: 15%;
 }
 
 .blog #PageCommentInterface_Form_PostCommentForm .field .middleColumn textarea{
-    min-width:400px;
-    min-height:200px;
+    min-width:50%;
 }
 
 .blog #PageCommentInterface_Form_PostCommentForm .Actions input{
     width:80px;
+    margin-top:20px;
 }
+
+
+

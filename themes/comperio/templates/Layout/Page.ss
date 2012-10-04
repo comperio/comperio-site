@@ -1,5 +1,5 @@
 <div class="page container" role="main" id="main">
-    <div class="row">
+    <div class="row-fluid">
         <div class="span9">
             <h1>$Level(2).Title</h1>                        
             

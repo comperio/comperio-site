@@ -1,5 +1,5 @@
 <div class="homepage container" role="main" id="main">
-    <div class="row clear">    
+    <div class="row-fluid clear">    
         <div class="span4">        
             $Content
         </div>
@@ -17,12 +17,31 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img alt="" src="themes/comperio/img/Biblioteca.jpg">
+                        <img alt="" src="themes/comperio/img/malcesine.jpg">
                         <div class="carousel-caption">
                             <h4>Soluzioni per le biblioteche</h4>
                             <p>Realizzare un progetto vuol dire innanzitutto intraprendere un <strong>percorso</strong> i cui veri protagonisti
                             sono i <strong>bibliotecari</strong> e la <strong>comunità di utenti</strong>. È solo grazie a loro che siamo in grado
                             di continuare a sviluppare <strong>soluzioni di qualità</strong>.</p>
+                            <em>Malcesine (VR), Biblioteca comunale</em>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img alt="" src="themes/comperio/img/paderno.jpg">
+                        <div class="carousel-caption">
+                            <h4>Reti di biblioteche pubbliche</h4>
+                            <p>ClavisNG è stato progettato per gestire <strong>reti di biblioteche pubbliche</strong>, ottimizzando la <strong>condivisione delle risorse</strong> 
+                            umane e librarie, anche attraverso nuovi <strong>modelli di circolazione</strong> del patrimonio.</p>
+                            <em>Paderno Dugnano (MI), Biblioteca Tilane</em>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img alt="" src="themes/comperio/img/ambrosiana.jpg">
+                        <div class="carousel-caption">
+                            <h4>Beni culturali e grandi biblioteche di conservazione</h4>
+                            <p>Lo sviluppo di ClavisNG tiene presente in particolar modo le esigenze delle <strong>grandi biblioteche storiche</strong>, 
+                            includendo in un unico catalogo libri antichi, manoscritti, epistolari storici e fondi archivistici.</p>
+                            <em>Biblioteca Ambrosiana (Milano), Sala Federiciana</em>
                         </div>
                     </div>
                     <div class="item">
@@ -51,7 +70,7 @@
 
         </div>
     </div>
-    <div class="row clear">           
+    <div class="row-fluid clear">           
         <div class="span8">
             <div class="hero-unit">
                 <% control LastPosts %>
@@ -94,8 +113,8 @@
                     </div>
                 </li>
                 <li class="span2">
-                    <div class="thumbnail" rel="popover" title="Biblioteca San Giorgio" data-content="Creazione del sito internet della biblioteca San Giorgio di Pistoia con il CMS Silverstripe">
-                        <img class="customer" alt="" src="themes/comperio/img/customers/logo_pistoia.png">
+                    <div class="thumbnail" rel="popover" title="Biblioinrete" data-content="Utilizzo del gestionale ClavisNG e DiscoveryNG">
+                        <img class="customer" alt="" src="themes/comperio/img/customers/logo_biblioinrete.png">
                     </div>
                 </li>
             </ul>

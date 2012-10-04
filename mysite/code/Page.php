@@ -4,8 +4,16 @@ class Page extends SiteTree {
 	public static $db = array(
 	);
 
-	public static $has_one = array(
-	);
+	static $has_one = array(
+        'ContentWidgetArea' => 'WidgetArea',
+    );
+
+    function getCMSFields()
+    {
+        $fields = parent::getCMSFields();
+        $fields->addFieldToTab("Root.Content.ContentWidget", new WidgetAreaEditor('ContentWidgetArea'));
+        return $fields;
+    }
 
 }
 class Page_Controller extends ContentController {
@@ -46,5 +54,14 @@ class Page_Controller extends ContentController {
         $this->Query = $form->getSearchQuery();
      
         return $this->customise($data)->renderWith(array('Page_results', 'Page'));
+    }
+
+
+    public function getAddThisWidget(){
+    	$widget = new addthisWidget;
+    	$widget->AddThisType = 'count';
+
+    	return $widget;
+
     }
 }
