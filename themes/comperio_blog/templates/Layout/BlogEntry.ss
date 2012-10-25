@@ -16,7 +16,7 @@
                     </div>
                     <div class="span4">
                         <ul class="postMeta unstyled">
-                            <li rel="tooltip" title="Date posted"><i class="icon-calendar"></i>$Date.Long</li>
+                            <li rel="tooltip" title="Date posted"><i class="icon-calendar"></i>$Date.FormatI18N(%e %B %Y)</li>
                             <li rel="tooltip" title="Posted by"><i class="icon-user"></i>$Author.XML</li>
                             <li rel="tooltip" title="Comments number"><i class="icon-comment"></i>$Comments.Count</li>
                             <% if TagsCollection %>

@@ -74,7 +74,7 @@
         <div class="span8">
             <div class="hero-unit">
                 <% control LastPosts %>
-                <p class="postDate" rel="tooltip" title="Date posted"><i class="icon-calendar"></i>$Date.Long</p>
+                <p class="postDate" rel="tooltip" title="Date posted"><i class="icon-calendar"></i>$Date.FormatI18N(%e %B %Y)</p>
                 <h2>$Title</h2>
                 <p>$Content.LimitCharacters(500)</p>
                 <p>

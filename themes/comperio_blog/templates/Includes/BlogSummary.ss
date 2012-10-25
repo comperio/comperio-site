@@ -3,7 +3,7 @@
         <% control AttachedImage %><img class="featuredImage" src="$SetWidth(150).URL" alt="$Title" /><% end_control %>
     <% end_if %> 
 	<span rel="tooltip" title="Date posted"><i class="icon-user"></i>$Author.XML</span>
-    <span rel="tooltip" title="Date posted"><i class="icon-calendar"></i>$Date.Long</span>
+    <span rel="tooltip" title="Date posted"><i class="icon-calendar"></i>$Date.FormatI18N(%e %B %Y)</span>
 	<h2 class="postTitle"><a href="$Link" title="<% _t('VIEWFULL', 'View full post titled -') %> '$Title'">$MenuTitle</a></h2>	
 	<% if TagsCollection %>
 		<p class="tags">

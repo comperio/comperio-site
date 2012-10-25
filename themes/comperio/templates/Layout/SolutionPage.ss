@@ -21,7 +21,7 @@
                 </h3>
                 <% control LinkedBlogEntries %>
                     <div class="well">
-                        <p class="postDate" rel="tooltip" title="Date posted"><i class="icon-calendar"></i>$Date.Long</p>
+                        <p class="postDate" rel="tooltip" title="Date posted"><i class="icon-calendar"></i>$Date.FormatI18N(%e %B %Y)</p>
                         <h4>$Title</h4>
                         <p>$Content.LimitCharacters(200)</p>                        
                         <p><a class="btn btn-primary btn-mini" href="$Link" title="Read Full Post">
