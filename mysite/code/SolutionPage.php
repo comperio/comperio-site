@@ -70,9 +70,6 @@ class SolutionPage extends Page
      */
     public function LinkedBlogEntries($limit = 5)
     {
-        if (!$this->LinkedTags)
-            return new DataObjectSet();
-
         $tags = explode(',', $this->LinkedTags);
 
         $sqlTagsClauses = array_map(function($tag)
@@ -83,7 +80,11 @@ class SolutionPage extends Page
 
         $sqlTagsClause = implode(' OR ', $sqlTagsClauses);
 
-        $blogEntries = DataObject::get('BlogEntry', $sqlTagsClause, 'Date DESC', '', $limit);
+        if ($this->LinkedTags) {
+            $blogEntries = DataObject::get('BlogEntry', $sqlTagsClause, 'Date DESC', '', $limit) ?: new DataObjectSet();
+        } else {
+            $blogEntries = new DataObjectSet();
+        }
 
         $blogEntries->Link = 'comperio-blog/tag/' . $this->LinkedTags;
 
