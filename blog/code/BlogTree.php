@@ -157,8 +157,15 @@ class BlogTree extends Page {
 		$dateCheck = '';
 		
 		if($tag) {
+            //Comperio MOD
+            $tagsClauses = array_map(function($rawTag){
+                return sprintf("\"BlogEntry\".\"Tags\" LIKE '%%%s%%'", Convert::raw2sql($rawTag));
+                },
+                explode(',', $tag)
+            );
+            $tagClauses =
 			$SQL_tag = Convert::raw2sql($tag);
-			$tagCheck = "AND \"BlogEntry\".\"Tags\" LIKE '%$SQL_tag%'";
+			$tagCheck = "AND (" . implode(" OR ", $tagsClauses) . ")" ;
 		}
 
 		if($date) {
