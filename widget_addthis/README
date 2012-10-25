@@ -1,0 +1,15 @@
+####################################################
+AddThis Widget - v0.1
+####################################################
+Released under the BSD license.
+
+# Maintainer Contact
+Ashley Etchell (Nickname: aetchell)
+<ash (at) etchell (dot) co (dot) uk>
+http://ash.etchell.co.uk
+
+# Requirements
+Tested on SilverStripe 2.4.2
+
+# Installation
+Extract this to your SilverStripe root directory and run "dev/build", then visit your admin CP and add the widget to selected pages.
