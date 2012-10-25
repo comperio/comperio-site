@@ -1,5 +1,5 @@
-/silverstripe-cache/*
-/assets/*
+silverstripe-cache/*
+assets/*
 .idea/*
-/mysite/_config.php
-/logs/*
+mysite/_config.php
+logs/*
