@@ -16,8 +16,9 @@
             <% end_if %>
 
             <% if LinkedBlogEntries %>
-            <div style="padding: 18px 0;">
-                <h3>Ultimi post nel blog</h3>
+            <div style="padding: 18px 0;" class="linkedBlogEntries">
+                <h3>Ultimi post nel blog<em><a href="$LinkedBlogEntries.Link">(leggi tutti)</a></em>
+                </h3>
                 <% control LinkedBlogEntries %>
                     <div class="well">
                         <p class="postDate" rel="tooltip" title="Date posted"><i class="icon-calendar"></i>$Date.Long</p>

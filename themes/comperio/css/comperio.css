@@ -183,3 +183,9 @@ footer #footer-floor h3, footer #footer-floor h4 {
 .nav-list [class^="icon-"] {
   margin-right: 2px;
 }
+
+.linkedBlogEntries h3 em {
+    font-size: x-small;
+    font-weight: normal;
+    padding-left: 5px;
+}
