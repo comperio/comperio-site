@@ -3,9 +3,9 @@
 		<% if AttachedImage %>
 	        <% control AttachedImage %><img class="featuredImage" src="$SetWidth(150).URL" alt="$Title" /><% end_control %>
 	    <% end_if %> 
-	    <h2 class="postTitle"><a href="$Link" title="<% _t('VIEWFULL', 'View full post titled -') %> '$Title'">$MenuTitle</a></h2>
 	    <span rel="tooltip" title="Date posted"><i class="icon-calendar"></i>$Date.FormatI18N(%e %B %Y)</span>
 	    <span rel="tooltip" title="Author"><i class="icon-user"></i>$Author.XML</span>
+	    <h2 class="postTitle"><a href="$Link" title="<% _t('VIEWFULL', 'View full post titled -') %> '$Title'">$MenuTitle</a></h2>
 	</div>
 	
 	<div class="blogSummaryContent">
