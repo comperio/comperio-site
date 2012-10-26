@@ -1,4 +1,5 @@
 <div class="blogSummary clearfix">
+<div class="blogSummaryHeader">
 	<% if AttachedImage %>
         <% control AttachedImage %><img class="featuredImage" src="$SetWidth(150).URL" alt="$Title" /><% end_control %>
     <% end_if %> 
@@ -13,7 +14,7 @@
 			<% end_control %>
 		</p>
 	<% end_if %>
-	
+</div>
 	<p>$Content</p>
 	
     <div class="row-fluid clear">

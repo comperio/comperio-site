@@ -48,9 +48,10 @@
 }
 .blogSummary {
 	border-bottom: 1px solid #ddd;
-	padding-bottom: 8px;
-	margin-top: 8px;
-
+	padding-bottom: 25px;
+}
+.blogSummaryHeader{
+	margin:25px 0;
 }
 #Content label{
 	margin-top: 0px;
