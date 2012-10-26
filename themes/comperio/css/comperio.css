@@ -27,6 +27,11 @@ body, p {
     font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
 }
 
+.span9 p, .span9 li{
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
 #myCarousel em{
   float:right;
   color:#fff;
