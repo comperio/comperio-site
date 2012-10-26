@@ -50,7 +50,13 @@
 	border-bottom: 1px solid #ddd;
 	padding-bottom: 25px;
 }
-.blogSummaryHeader{
+.blogSummary .blogSummaryHeader{
+	margin:25px 0;
+}
+.blogSummary .blogSummaryHeader span{
+	margin-right:10px;
+}
+.blogSummary .blogSummaryContent{
 	margin:25px 0;
 }
 #Content label{

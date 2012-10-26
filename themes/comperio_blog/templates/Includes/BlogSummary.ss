@@ -1,23 +1,27 @@
 <div class="blogSummary clearfix">
-<div class="blogSummaryHeader">
-	<% if AttachedImage %>
-        <% control AttachedImage %><img class="featuredImage" src="$SetWidth(150).URL" alt="$Title" /><% end_control %>
-    <% end_if %> 
-	<span rel="tooltip" title="Date posted"><i class="icon-user"></i>$Author.XML</span>
-    <span rel="tooltip" title="Date posted"><i class="icon-calendar"></i>$Date.FormatI18N(%e %B %Y)</span>
-	<h2 class="postTitle"><a href="$Link" title="<% _t('VIEWFULL', 'View full post titled -') %> '$Title'">$MenuTitle</a></h2>	
-	<% if TagsCollection %>
-		<p class="tags">
-			<i class="icon-tags"></i> Tags:
-			<% control TagsCollection %>
-				<a href="$Link" title="View all posts tagged '$Tag'" rel="tag">$Tag</a><% if Last %><% else %>,<% end_if %>
-			<% end_control %>
-		</p>
-	<% end_if %>
-</div>
-	<p>$Content</p>
+	<div class="blogSummaryHeader">
+		<% if AttachedImage %>
+	        <% control AttachedImage %><img class="featuredImage" src="$SetWidth(150).URL" alt="$Title" /><% end_control %>
+	    <% end_if %> 
+	    <h2 class="postTitle"><a href="$Link" title="<% _t('VIEWFULL', 'View full post titled -') %> '$Title'">$MenuTitle</a></h2>
+	    <span rel="tooltip" title="Date posted"><i class="icon-calendar"></i>$Date.FormatI18N(%e %B %Y)</span>
+	    <span rel="tooltip" title="Author"><i class="icon-user"></i>$Author.XML</span>
+	</div>
 	
+	<div class="blogSummaryContent">
+		$Content
+	</div>
+	
+
     <div class="row-fluid clear">
+	    <% if TagsCollection %>
+			<span class="tags">
+				<i class="icon-tags" rel="tooltip" title="Tags"></i> Tags: 
+				<% control TagsCollection %>
+					<a href="$Link" title="View all posts tagged '$Tag'" rel="tag">$Tag</a><% if Last %><% else %>,<% end_if %>
+				<% end_control %>
+			</span>
+		<% end_if %>
 		<div class="btn-group pull-right">	        	
             <a class="btn btn-small" href="$Link#PageComments_holder" title="View Comments for this post">
                 <i class="icon-comment"></i>$Comments.Count
