@@ -4,7 +4,7 @@
 
             <% include BreadCrumbs %>
             
-            <h1>Blog</h1>
+            <h1>$Title</h1>
             
             <% if SelectedTag %>
             <h3><% _t('VIEWINGTAGGED', 'Viewing entries tagged with') %> '$SelectedTag'</h3>
