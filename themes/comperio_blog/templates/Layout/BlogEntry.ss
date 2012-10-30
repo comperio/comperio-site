@@ -3,9 +3,7 @@
         <div id="BlogContent" class="span9">
 
             <% include BreadCrumbs %>
-            
-            <h1>Blog</h1>
-            
+                       
             <div class="blogEntry">
                 <div class="row-fluid">
                     <div class="span8">
@@ -18,7 +16,7 @@
                         <ul class="postMeta unstyled">
                             <li rel="tooltip" title="Date posted"><i class="icon-calendar"></i>$Date.FormatI18N(%e %B %Y)</li>
                             <li rel="tooltip" title="Posted by"><i class="icon-user"></i>$Author.XML</li>
-                            <li rel="tooltip" title="Comments number"><i class="icon-comment"></i>$Comments.Count</li>
+                            <% if ProvideComments %><li rel="tooltip" title="Comments number"><i class="icon-comment"></i>$Comments.Count</li><% end_if %>
                             <% if TagsCollection %>
                             <li rel="tooltip" title="Tags" class="tags">
                                 <i class="icon-tags"></i><% _t('TAGS', 'Tags:') %> 

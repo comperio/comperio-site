@@ -22,10 +22,12 @@
 				<% end_control %>
 			</span>
 		<% end_if %>
-		<div class="btn-group pull-right">	        	
+		<div class="btn-group pull-right">   
+			<% if ProvideComments %>
             <a class="btn btn-small" href="$Link#PageComments_holder" title="View Comments for this post">
                 <i class="icon-comment"></i>$Comments.Count
             </a>
+            <% end_if %>
             <a class="btn btn-small" href="$Link" title="Read Full Post">
                 Leggi tutto
             </a>
