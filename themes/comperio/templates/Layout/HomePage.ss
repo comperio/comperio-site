@@ -70,15 +70,14 @@
 
         </div>
     </div>
-    <div class="row-fluid clear">           
-        <div class="span8">
+    <div class="row-fluid clear">
+        <div class="span4">
             <div class="hero-unit">
                 <% control LastPosts %>
                 <p class="postDate" rel="tooltip" title="Date posted"><i class="icon-calendar"></i>$Date.FormatI18N(%e %B %Y)</p>
                 <h2>$Title</h2>
-                <p>$Content.LimitCharacters(500)</p>
                 <p>
-                <a class="btn btn-primary btn-large pull-right" href="$Link" title="Read Full Post">
+                <a class="btn btn-primary btn-medium pull-right" href="$Link" title="Read Full Post">
                     Leggi tutto ...
                 </a>
                 </p>
@@ -118,8 +117,11 @@
                     </div>
                 </li>
             </ul>
-            <button class="pull-right btn btn-mini btn-warning">...vedi tutti</button>
-        </div>   
+            
+        </div> 
+        <div class="span4">
+            <a class="twitter-timeline"  href="https://twitter.com/ComperioSrl" data-widget-id="268290190525743104">Tweets di @ComperioSrl</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
     </div>
-    
 </div>
