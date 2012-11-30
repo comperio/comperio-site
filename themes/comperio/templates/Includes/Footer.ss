@@ -38,35 +38,22 @@
                 </form>-->
             </div>
             <div class="span4 offset1 contacts">
+                    <h4>
+                    Seguici su <a href="https://www.facebook.com/pages/Comperio-srl/155850194478791" title="Comperio @ Facebook">
+                    Facebook</a> e <a href="https://twitter.com/ComperioSrl">Twitter</a>
+                    </h4>
                 <p>Comperio Srl.<br/>
-                    [lat. compĕrĭo : scoprire, trovare, apprendere, conoscere]<br/>
-                    Via Nazionale, 154 - 35048 Stanghella (PD)[Sede legale]<br/>
-                    Via L.Soldati, 127 Fiesso Umbertiano - 45024 Rovigo (Italy)<br/>
-                    Via Torrossa, 16 - 36043 Camisano - Vicenza (Italy)<br/>
-                    Phone: +39 0425 072294 - (toll free) 800 090 349<br/>
-                    Fax: +39 0425 1662008<br/>
-                    P.IVA (VAT): IT01162350290</p>
+                &copy; 2008-2012 <a title="Comperio srl" href="http://www.comperio.it">Comperio srl</a>. Some Rights Reserved.<br/>
+                P.IVA (VAT): IT01162350290</p>
             </div>
         </div>
     </div>
     <div id="footer-floor">
         <div class="container">
             <div class="row">
-                <div class="span9">
-                    <h3 id="phone">
-                        +39 0425 072294 - <a href="mailto:info@comperio.it">info@comperio.it</a>
-                    </h3>
-                    <p>
-                        &copy; 2011 <a title="Comperio srl" href="http://www.comperio.it">Comperio srl</a>. Some Rights Reserved.
-                        <!-- &nbsp;<a href="/terms">Terms</a>&nbsp;&amp;&nbsp;<a href="/privacy">Privacy</a>. -->
-                    </p>
+                <div class="span12">
+                    <h3>lat. compĕrĭo : scoprire, trovare, apprendere, conoscere</h3>
                 </div>
-                <div class="span3">
-                    <h4>
-                    Seguici su <a href="https://www.facebook.com/pages/Comperio-srl/155850194478791" title="Comperio @ Facebook">
-                    Facebook</a>
-                    </h4>
-                </div>                        
             </div>
         </div>
     </div>

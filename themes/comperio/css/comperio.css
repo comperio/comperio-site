@@ -12,10 +12,10 @@ html, body {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto -205px;
+    margin: 0 auto -165px;
 }
 footer, .push {
-    height: 205px;
+    height: 165px;
 }        
 
 footer {   
@@ -66,8 +66,15 @@ footer .row{
     padding:0.8em 0 0 0;
 }
 
+footer .row .contacts {
+  text-align: right;
+}
+
+footer .row .contacts h4{
+  margin-bottom:10px;
+}
+
 footer .row .contacts p{
-    text-align: right;
     font-size: small;
     line-height: 15px;
 }
@@ -88,8 +95,17 @@ footer a:hover {
 footer #footer-floor {
     background: none repeat scroll 0 0 #1B1B1B;
 }
+footer #footer-floor .row {
+    padding: 0.4em 0;
+}
+
 footer #footer-floor h3, footer #footer-floor h4 {
-    color: #FFFFFF;
+    color: #999;
+    font-style: italic;
+    font-family: Georgia, serif;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 0.2em;
 }
 
 .required{
@@ -143,6 +159,10 @@ footer #footer-floor h3, footer #footer-floor h4 {
 #main .hero-unit h1 {
     border-bottom: none;
     margin: 0;
+}
+
+.homepage .hero-unit{
+  padding: 40px;
 }
 
 /* Add third level to nav-list menu */
