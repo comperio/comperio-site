@@ -3,7 +3,7 @@
     class GoogleAnalyticsExtender extends DataObjectDecorator
     {
             function contentControllerInit($controller) {
-    $accountId = $this->SiteConfig->GoogleAnalyticsAccountID;
+            $accountId = $this->owner->SiteConfig->GoogleAnalyticsAccountID;
 
     if (preg_match("/UA-[0-9]{7,}-[0-9]{1,}/", $accountId)) {
       Requirements::customScript(<<<JS
