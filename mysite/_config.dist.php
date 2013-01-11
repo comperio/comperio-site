@@ -42,3 +42,16 @@ SpamProtectorManager::set_spam_protector("RecaptchaProtector");
 
 //Add featured image to blog entry
 DataObject::add_extension('BlogEntry', 'BlogEntryDecorator');
+
+//Enable multilanguage-site
+//default translation
+Translatable::set_default_locale('it_IT');
+ 
+/* restrict the language select dropdown in the admin
+   to only those languages that you will actually use. 
+ */
+Translatable::set_allowed_locales(array('it_IT','en_US'));
+
+DataObject::add_extension('SiteTree', 'Translatable');
+DataObject::add_extension('SiteConfig', 'Translatable');
+
