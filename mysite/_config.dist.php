@@ -31,8 +31,9 @@ FulltextSearchable::enable();
 // Logging
 SS_Log::add_writer(new SS_LogFileWriter(__DIR__.'/../logs/silverstripe.log'), SS_Log::NOTICE, '<=');
 
+HtmlEditorConfig::get('cms')->setOption('verify_html', 'false');
 HtmlEditorConfig::get('cms')->setOption('valid_elements','*[*]');
-HtmlEditorConfig::get('cms')->setOption('extended_valid_elements', str_replace('img[', 'img[style|', HtmlEditorConfig::get('cms')->getOption('extended_valid_elements')));
+HtmlEditorConfig::get('cms')->setOption('extended_valid_elements', "img[class|src|alt|title|hspace|vspace|width|height|align|onmouseover|onmouseout|name|usemap|style],iframe[src|n");
 
 // Recaptcha api keys
 RecaptchaField::$public_api_key = '';
