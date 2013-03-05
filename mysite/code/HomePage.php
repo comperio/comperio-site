@@ -44,7 +44,8 @@ class HomePage_Controller extends Page_Controller {
      * @return DataObjectSet
      */
     public function LastPosts($limit = 1)
-    {
-        return DataObject::get('BlogEntry', '', 'Date DESC', '', $limit);
+    {	
+    	$blogHolder = DataObject::get_one('BlogTree', 'BlogTree_Live.Name=\'Comperio Blog\'');
+        return DataObject::get('BlogEntry', 'SiteTree_Live.ParentID = '.$blogHolder->ID, 'Date DESC', '', $limit);
     }
 }
