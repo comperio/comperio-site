@@ -10,55 +10,46 @@
                     <div class="item active">
                         <img alt="" src="themes/comperio/img/comperio1.jpg">
                         <div class="carousel-caption">
-                            <h4>Passione per l'innovazione</h4>
-                            <p>Per noi questo significa rendere concrete <strong>idee</strong> grazie all'impegno di una <strong>squadra</strong> che 
-                            vede unite le competenze di <strong>bibliotecari</strong> e <strong>informatici</strong>. Affrontando le difficoltà e gli ostacoli come 
-                            nuove sfide in grado di farci <strong>crescere</strong>.</p>
+                            <h4><% _t('PASSIONFORINNOVATION') %></h4>
+                            <p><% _t('PASSIONFORINNOVATIONPARAGRAPH') %></p>
                         </div>
                     </div>
                     <div class="item">
                         <img alt="" src="themes/comperio/img/malcesine.jpg">
                         <div class="carousel-caption">
-                            <h4>Soluzioni per le biblioteche</h4>
-                            <p>Realizzare un progetto vuol dire innanzitutto intraprendere un <strong>percorso</strong> i cui veri protagonisti
-                            sono i <strong>bibliotecari</strong> e la <strong>comunità di utenti</strong>. È solo grazie a loro che siamo in grado
-                            di continuare a sviluppare <strong>soluzioni di qualità</strong>.</p>
+                            <h4><% _t('SOLUTIONSFORLIBRARIES') %></h4>
+                            <p><% _t('SOLUTIONSFORLIBRARIESPARAGRAPH') %></p>
                             <em>Malcesine (VR), Biblioteca comunale</em>
                         </div>
                     </div>
                     <div class="item">
                         <img alt="" src="themes/comperio/img/paderno.jpg">
                         <div class="carousel-caption">
-                            <h4>Reti di biblioteche pubbliche</h4>
-                            <p>ClavisNG è stato progettato per gestire <strong>reti di biblioteche pubbliche</strong>, ottimizzando la <strong>condivisione delle risorse</strong> 
-                            umane e librarie, anche attraverso nuovi <strong>modelli di circolazione</strong> del patrimonio.</p>
+                            <h4><% _t('PUBLICLIBRARIESSYSTEMS') %></h4>
+                            <p><% _t('PUBLICLIBRARIESSYSTEMSPARAGRAPH') %></p>
                             <em>Paderno Dugnano (MI), Biblioteca Tilane</em>
                         </div>
                     </div>
                     <div class="item">
                         <img alt="" src="themes/comperio/img/ambrosiana.jpg">
                         <div class="carousel-caption">
-                            <h4>Beni culturali e grandi biblioteche di conservazione</h4>
-                            <p>Lo sviluppo di ClavisNG tiene presente in particolar modo le esigenze delle <strong>grandi biblioteche storiche</strong>, 
-                            includendo in un unico catalogo libri antichi, manoscritti, epistolari storici e fondi archivistici.</p>
+                            <h4><% _t('CULTURALHERITAGE') %></h4>
+                            <p><% _t('CULTURALHERITAGEPARAGRAPH') %></p>
                             <em>Biblioteca Ambrosiana (Milano), Sala Federiciana</em>
                         </div>
                     </div>
                     <div class="item">
                         <img alt="" src="themes/comperio/img/clavis.png">
                         <div class="carousel-caption">
-                            <h4>Clavis NG</h4>
-                            <p>Sviluppato a partire dal 2003 è un software <strong>web based</strong> pensato per gestire in modo <strong>efficiente e completo</strong> una 
-                            <strong>rete di biblioteche</strong>. Dal 2010 è rilasciato con licenza <strong>open source</strong> &quot;Affero GPL v.3&quot;.</p>
+                            <h4><% _t('CLAVISNG') %></h4>
+                            <p><% _t('CLAVISNGPARAGRAPH') %></p>
                         </div>
                     </div>
                     <div class="item">
                         <img alt="" src="themes/comperio/img/dng.png">
                         <div class="carousel-caption">
-                            <h4>Discovery NG</h4>
-                            <p>Un <strong>OPAC sociale</strong> in grado di integrare le funzioni necessarie alla gestione di: <strong>catalogo</strong>, <strong>sito della biblioteca</strong>,
-                            <strong>comunità degli utenti</strong>. A partire dal 2011 è stato completamente riscritto a partire dal <strong>CMS</strong> open source <strong>SilverStripe</strong>.
-                            </p>
+                            <h4><% _t('DISCOVERYNG') %></h4>
+                            <p><% _t('DISCOVERYNGPARAGRAPH') %></p>
                         </div>
                     </div>
 
@@ -78,7 +69,7 @@
                 <h2>$Title</h2>
                 <p>
                 <a class="btn btn-primary btn-medium pull-right" href="$Link" title="Read Full Post">
-                    Leggi tutto ...
+                    <% _t('Comperio.READALL') %>
                 </a>
                 </p>
                 <% end_control %>

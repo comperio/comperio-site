@@ -58,7 +58,9 @@ $lang['en_US']['Boolean']['NO'] = 'No';
 $lang['en_US']['Boolean']['YES'] = 'Yes';
 $lang['en_US']['CMSMain']['DELETE'] = 'Delete from the draft site';
 $lang['en_US']['CMSMain']['DELETEFP'] = 'Delete from the published site';
+$lang['en_US']['CMSMain']['EMAIL'] = 'Email';
 $lang['en_US']['CMSMain']['RESTORE'] = 'Restore';
+$lang['en_US']['CMSMain']['ROLLBACK'] = 'Roll back to this version';
 $lang['en_US']['CMSMain']['SAVE'] = 'Save';
 $lang['en_US']['ChangePasswordEmail.ss']['CHANGEPASSWORDTEXT1'] = array(
 	'You changed your password for',
@@ -79,7 +81,6 @@ $lang['en_US']['ComplexTableField.ss']['ADDITEM'] = array(
 	PR_MEDIUM,
 	'Add [name]'
 );
-$lang['en_US']['ComplexTableField.ss']['CSVEXPORT'] = 'Export to CSV';
 $lang['en_US']['ComplexTableField.ss']['NOITEMSFOUND'] = 'No items found';
 $lang['en_US']['ComplexTableField.ss']['SORTASC'] = 'Sort ascending';
 $lang['en_US']['ComplexTableField.ss']['SORTDESC'] = 'Sort descending';
@@ -150,7 +151,7 @@ $lang['en_US']['Date']['YEAR'] = ' year';
 $lang['en_US']['Date']['YEARS'] = ' years';
 $lang['en_US']['DateField']['NOTSET'] = 'not set';
 $lang['en_US']['DateField']['TODAY'] = 'today';
-$lang['en_US']['DateField']['VALIDATIONJS'] = 'Please enter a valid date format.';
+$lang['en_US']['DateField']['VALIDATIONJS'] = 'Please enter a valid date format (DD/MM/YYYY).';
 $lang['en_US']['DateField']['VALIDDATEFORMAT2'] = 'Please enter a valid date format (%s).';
 $lang['en_US']['DateField']['VALIDDATEMAXDATE'] = 'Your date has to be older or matching the maximum allowed date (%s)';
 $lang['en_US']['DateField']['VALIDDATEMINDATE'] = 'Your date has to be newer or matching the minimum allowed date (%s)';
@@ -433,7 +434,6 @@ $lang['en_US']['Member']['MOBILE'] = 'Mobile';
 $lang['en_US']['Member']['NAME'] = 'Name';
 $lang['en_US']['Member']['NEWPASSWORD'] = 'New Password';
 $lang['en_US']['Member']['PASSWORD'] = 'Password';
-$lang['en_US']['Member']['PASSWORDCHANGED'] = 'Your password has been changed, and a copy emailed to you.';
 $lang['en_US']['Member']['PERSONALDETAILS'] = array(
 	'Personal Details',
 	PR_MEDIUM,

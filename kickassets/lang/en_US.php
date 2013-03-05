@@ -2,7 +2,14 @@
 
 global $lang;
 
+$lang['en_US']['KickAssetAdmin']['MENUTITLE'] = array(
+	'Browse files...',
+	100,
+	'Menu title'
+);
 $lang['en_US']['AssetAdmin']['MENUTITLE'] = 'Files & Images';
+$lang['en_US']['AssetAdmin_left.ss']['FILESYSTEMSYNC'] = 'Look for new files';
+$lang['en_US']['AssetAdmin_left.ss']['FILESYSTEMSYNC_DESC'] = 'SilverStripe maintains its own database of the files &amp; images stored in your assets/ folder.  Click this button to update that database, if files are added to the assets/ folder from outside SilverStripe, for example, if you have uploaded files via FTP.';
 $lang['en_US']['FileAttachmentField']['AREYOUSURE'] = 'Are you sure you want to delete this file permanently?';
 $lang['en_US']['FileAttachmentField']['CANCEL'] = 'Cancel';
 $lang['en_US']['FileAttachmentField']['DELETEFROMFILES'] = 'Delete from files';
@@ -34,6 +41,7 @@ $lang['en_US']['KickAssets']['PLEASEUPLOADONEFILE'] = 'Please upload only one fi
 $lang['en_US']['KickAssets']['REPLACEFILE'] = 'Replace file';
 $lang['en_US']['KickAssets']['SIZE'] = 'Size';
 $lang['en_US']['KickAssets']['TITLE'] = 'Title';
+$lang['en_US']['KickAssets']['WIDTHHEIGHT'] = 'Size (px)';
 $lang['en_US']['KickAssetts']['CANCEL'] = 'Cancel';
 $lang['en_US']['KickAssetts']['SAVE'] = 'Save';
 

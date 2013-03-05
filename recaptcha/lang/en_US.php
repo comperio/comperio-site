@@ -7,6 +7,11 @@ $lang['en_US']['RecaptchaField']['EMPTY'] = array(
 	PR_MEDIUM,
 	'Recaptcha (http://recaptcha.net) provides two words in an image, and expects a user to type them in a textfield'
 );
+$lang['en_US']['RecaptchaField']['NORESPONSE'] = array(
+	'The recaptcha service gave no response. Please try again later.',
+	PR_MEDIUM,
+	'Recaptcha (http://recaptcha.net) provides two words in an image, and expects a user to type them in a textfield'
+);
 $lang['en_US']['RecaptchaField']['VALIDSOLUTION'] = array(
 	'Your answer didn\'t match the captcha words, please try again',
 	PR_MEDIUM,

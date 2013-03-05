@@ -6,8 +6,12 @@ $lang['en_US']['AddField.ss']['ADD'] = 'Add';
 $lang['en_US']['AddField.ss']['SELECTAFIELD'] = 'Select a Field';
 $lang['en_US']['CustomRule.ss']['BLANK'] = 'Blank';
 $lang['en_US']['CustomRule.ss']['DELETE'] = 'Delete';
+$lang['en_US']['CustomRule.ss']['GREATERTHAN'] = 'Value Greater Than';
+$lang['en_US']['CustomRule.ss']['GREATERTHANEQUAL'] = 'Value Greater Than Or Equal';
 $lang['en_US']['CustomRule.ss']['HIDETHISFIELD'] = 'Hide This Field';
 $lang['en_US']['CustomRule.ss']['IS'] = 'Is';
+$lang['en_US']['CustomRule.ss']['LESSTHAN'] = 'Value Less Than';
+$lang['en_US']['CustomRule.ss']['LESSTHANEQUAL'] = 'Value Less Than Or Equal';
 $lang['en_US']['CustomRule.ss']['NOTBLANK'] = 'Not Blank';
 $lang['en_US']['CustomRule.ss']['NOTVALUE'] = 'Not Value';
 $lang['en_US']['CustomRule.ss']['SHOWTHISFIELD'] = 'Show This Field';
@@ -75,6 +79,7 @@ $lang['en_US']['EditableFileField']['SINGULARNAME'] = array(
 );
 $lang['en_US']['EditableFormField']['CHECKEDBYDEFAULT'] = 'Checked by Default?';
 $lang['en_US']['EditableFormField']['CUSTOMERROR'] = 'Custom Error Message';
+$lang['en_US']['EditableFormField']['DEFAULTTOTODAY'] = 'Default to Today?';
 $lang['en_US']['EditableFormField']['ENTERQUESTION'] = 'Enter Question';
 $lang['en_US']['EditableFormField']['GROUP'] = 'Group';
 $lang['en_US']['EditableFormField']['NO'] = 'No';
@@ -98,9 +103,13 @@ $lang['en_US']['EditableFormField.ss']['DELETE'] = 'Delete';
 $lang['en_US']['EditableFormField.ss']['DRAG'] = 'Drag to rearrange order of fields';
 $lang['en_US']['EditableFormField.ss']['FIELDCONFIGURATION'] = 'Field Configuration';
 $lang['en_US']['EditableFormField.ss']['FIELDONDEFAULT'] = 'Field On Default';
+$lang['en_US']['EditableFormField.ss']['GREATERTHAN'] = 'Value Greater Than';
+$lang['en_US']['EditableFormField.ss']['GREATERTHANEQUAL'] = 'Value Greater Than Or Equal';
 $lang['en_US']['EditableFormField.ss']['HIDE'] = 'Hide';
 $lang['en_US']['EditableFormField.ss']['HIDETHISFIELD'] = 'Hide This Field';
 $lang['en_US']['EditableFormField.ss']['IS'] = 'Is';
+$lang['en_US']['EditableFormField.ss']['LESSTHAN'] = 'Value Less Than';
+$lang['en_US']['EditableFormField.ss']['LESSTHANEQUAL'] = 'Value Less Than Or Equal';
 $lang['en_US']['EditableFormField.ss']['LOCKED'] = 'These fields cannot be modified';
 $lang['en_US']['EditableFormField.ss']['NOTBLANK'] = 'Not Blank';
 $lang['en_US']['EditableFormField.ss']['NOTVALUE'] = 'Not Value';
@@ -186,8 +195,8 @@ $lang['en_US']['EditableTextField']['SINGULARNAME'] = array(
 	50,
 	'Singular name of the object, used in dropdowns and to generally identify a single object in the interface'
 );
-$lang['en_US']['EditableTextField']['TEXTBOXLENGTH'] = 'Length of text box';
 $lang['en_US']['EditableTextField']['TEXTLENGTH'] = 'Text length';
+$lang['en_US']['SubmittedFileField']['DOWNLOADFILE'] = 'Download File';
 $lang['en_US']['SubmittedFileField']['PLURALNAME'] = array(
 	'Submitted File Fields',
 	50,
@@ -253,6 +262,16 @@ $lang['en_US']['UserDefinedForm']['SINGULARNAME'] = array(
 $lang['en_US']['UserDefinedForm']['SUBMISSIONS'] = 'Submissions';
 $lang['en_US']['UserDefinedForm']['SUBMITBUTTON'] = 'Submit';
 $lang['en_US']['UserDefinedForm']['TEXTONSUBMIT'] = 'Text on submit button:';
+$lang['en_US']['UserDefinedForm_EmailRecipient']['PLURALNAME'] = array(
+	'User Defined Form Email Recipients',
+	50,
+	'Pural name of the object, used in dropdowns and to generally identify a collection of this object in the interface'
+);
+$lang['en_US']['UserDefinedForm_EmailRecipient']['SINGULARNAME'] = array(
+	'User Defined Form Email Recipient',
+	50,
+	'Singular name of the object, used in dropdowns and to generally identify a single object in the interface'
+);
 $lang['en_US']['UserFormsMigrationTask']['DEFAULTSUBMISSIONTITLE'] = 'Submission Data';
 
 ?>

@@ -27,8 +27,17 @@
                 <% end_control %>
                 
             </ul>
-
+            
             <ul class="nav pull-right">
+            <% if Translations %>
+			<% control Translations %>
+			  <li class="$Locale.RFC1766">
+			    <a href="$Link" hreflang="$Locale.RFC1766" title="<% sprintf(_t('SHOWINPAGE','Show page in %s'),$Locale.Nice) %>">
+			    <img src="themes/comperio/img/{$Locale.RFC1766}.png" alt="<% sprintf(_t('SHOWINPAGE','Show page in %s'),$Locale.Nice) %>"/>
+			   </a>
+			  </li>
+			<% end_control %>
+			<% end_if %>
             <% if CurrentMember %>
                 <li><a href="admin">Ciao $CurrentMember.FirstName</a></li>
             <% else %>

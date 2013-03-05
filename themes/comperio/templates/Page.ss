@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="$ContentLocale">
     <head>
         <% base_tag %>
         <title>$Title &raquo; $SiteConfig.Title</title>
         $MetaTags(false)
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <% require css(themes/comperio/css/bootstrap.css) %>
         <% require css(themes/comperio/css/comperio.css) %>
