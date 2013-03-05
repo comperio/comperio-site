@@ -14,7 +14,7 @@ $lang['en_US']['HomePage.ss']['PUBLICLIBRARIESSYSTEMSPARAGRAPH'] = 'ClavisNG was
 $lang['en_US']['HomePage.ss']['CULTURALHERITAGE'] = 'Cultural heirtage and conservation libraries';
 $lang['en_US']['HomePage.ss']['CULTURALHERITAGEPARAGRAPH'] = 'The development of ClavisNG keep in mind the particular needs of <strong>conservation libraries</strong>, including in a single catalog ancient books, manuscripts, epistles and archival collections.';
 $lang['en_US']['HomePage.ss']['CLAVISNG'] = 'Clavis NG';
-$lang['en_US']['HomePage.ss']['CLAVISNGPARAGRAPH'] = 'Developed since 2003 is a <strong>web based software</ strong> designed to to <strong>fully and efficiently</strong> manage a <strong>huge network of libraries</strong>. In 2010 it has been released under the <strong>open source</strong> license &quot;Affero GPL v.3.&quot;';
+$lang['en_US']['HomePage.ss']['CLAVISNGPARAGRAPH'] = 'Developed since 2003 is a <strong>web based software</strong> designed to to <strong>fully and efficiently</strong> manage a <strong>huge network of libraries</strong>. In 2010 it has been released under the <strong>open source</strong> license &quot;Affero GPL v.3.&quot;.';
 
 $lang['en_US']['HomePage.ss']['DISCOVERYNG'] = 'Discovery NG';
 $lang['en_US']['HomePage.ss']['DISCOVERYNGPARAGRAPH'] = 'A <strong>Next Generation Catalog</strong> designed to integrate the needs of a modern library: the <strong>catalog</strong>, the <strong>library site</strong>, the <strong>user community</strong>. Since 2011 it has been completely redesigned as a module for <strong>SilverStripe</strong>, an open source <strong>CMS</strong> open source.';
