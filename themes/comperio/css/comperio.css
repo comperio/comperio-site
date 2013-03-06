@@ -146,23 +146,19 @@ footer #footer-floor h3, footer #footer-floor h4 {
 }
 
 #main .hero-unit .postDate {
-  float:right;
-  position: relative;
-  top:-35px;
-  vertical-align: top;
+  font-size:1.1em;
 }
 
 #main .hero-unit .postDate i{
-  margin: 4px 5px 0;
+  margin: 0 5px 0 0;
 }
 
-#main .hero-unit h1 {
-    border-bottom: none;
-    margin: 0;
+#main .hero-unit h2 {
+    margin-bottom: 10px;
 }
 
 .homepage .hero-unit{
-  padding: 40px;
+  padding: 30px;
 }
 
 /* Add third level to nav-list menu */

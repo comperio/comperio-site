@@ -68,7 +68,7 @@
                 <p class="postDate" rel="tooltip" title="Date posted"><i class="icon-calendar"></i>$Date.FormatI18N(%e %B %Y)</p>
                 <h2>$Title</h2>
                 <p>
-                <a class="btn btn-primary btn-medium pull-right" href="$Link" title="Read Full Post">
+                <a class="btn btn-primary btn-medium" href="$Link" title="Read Full Post">
                     <% _t('Comperio.READALL') %>
                 </a>
                 </p>
