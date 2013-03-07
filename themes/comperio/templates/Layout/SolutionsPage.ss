@@ -1,7 +1,7 @@
 <div class="solutions container" role="main" id="main">
     <div class="row-fluid">
         <div class="span9">
-            <h1>Soluzioni</h1>
+            <h1>$Title</h1>
             
 
             $Content
