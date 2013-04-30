@@ -14,4 +14,4 @@ define('ADDTHISUSERNAME','xa-4ca496846544579c');
 /**
  * @var string Default widget title, you can actually set this in the widget config in admin, but set a default fallback option here.
  */
-define('ADDTHISTITLE','Socialise me baby!');
+define('ADDTHISTITLE','Share this awesome post!');
