@@ -8,6 +8,11 @@ class Page extends SiteTree {
         'ContentWidgetArea' => 'WidgetArea',
     );
 
+    public function onBeforeWrite() { 
+        $this->Content = preg_replace('|<iframe(.*)/>|Uims', '<iframe\\1> </iframe>', $this->Content); 
+        parent::onBeforeWrite(); 
+    }
+
     function getCMSFields()
     {
         $fields = parent::getCMSFields();
