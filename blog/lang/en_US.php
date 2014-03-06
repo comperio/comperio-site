@@ -30,8 +30,6 @@ $lang['en_US']['BlogEntry']['SINGULARNAME'] = array(
 	'Singular name of the object, used in dropdowns and to generally identify a single object in the interface'
 );
 $lang['en_US']['BlogEntry']['TS'] = 'Tags (comma sep.)';
-$lang['en_US']['BlogEntry']['TrackbackURLs'] = 'Trackback URLs';
-$lang['en_US']['BlogEntry']['TrackbackURLs_DISABLED'] = 'To use this feature, please check \'Enable TrackBacks\' check box on the blog holder.';
 $lang['en_US']['BlogEntry.ss']['COMMENTS'] = 'Comments';
 $lang['en_US']['BlogEntry.ss']['EDITTHIS'] = 'Edit this post';
 $lang['en_US']['BlogEntry.ss']['POSTEDBY'] = 'Posted by';
@@ -53,12 +51,11 @@ $lang['en_US']['BlogHolder']['SINGULARNAME'] = array(
 );
 $lang['en_US']['BlogHolder']['SJ'] = 'Subject';
 $lang['en_US']['BlogHolder']['SPUC'] = 'Please separate tags using commas.';
-$lang['en_US']['BlogHolder']['SUCCONTENT'] = '<p>Congratulations, the SilverStripe blog module has been successfully installed. This blog entry can be safely deleted. You can configure aspects of your blog (such as the widgets displayed in the sidebar) in <a href="admin">the CMS</a>.</p>';
+$lang['en_US']['BlogHolder']['SUCCONTENT'] = 'Congratulations, the SilverStripe blog module has been successfully installed. This blog entry can be safely deleted. You can configure aspects of your blog (such as the widgets displayed in the sidebar) in [url=admin]the CMS[/url].';
 $lang['en_US']['BlogHolder']['SUCTAGS'] = 'silverstripe, blog';
 $lang['en_US']['BlogHolder']['SUCTITLE'] = 'SilverStripe blog module successfully installed';
 $lang['en_US']['BlogHolder']['TE'] = 'For example: sport, personal, science fiction';
 $lang['en_US']['BlogHolder.ss']['NOENTRIES'] = 'There are no blog entries';
-$lang['en_US']['BlogHolder.ss']['VIEWINGPOSTEDIN'] = 'Viewing entries posted in';
 $lang['en_US']['BlogHolder.ss']['VIEWINGTAGGED'] = 'Viewing entries tagged with';
 $lang['en_US']['BlogManagementWidget']['COMADM'] = 'Comment administration';
 $lang['en_US']['BlogManagementWidget']['PLURALNAME'] = array(
@@ -89,9 +86,6 @@ $lang['en_US']['BlogTree']['SINGULARNAME'] = array(
 	50,
 	'Singular name of the object, used in dropdowns and to generally identify a single object in the interface'
 );
-$lang['en_US']['BlogTree.ss']['NOENTRIES'] = 'There are no blog entries';
-$lang['en_US']['BlogTree.ss']['VIEWINGPOSTEDIN'] = 'Viewing entries posted in';
-$lang['en_US']['BlogTree.ss']['VIEWINGTAGGED'] = 'Viewing entries tagged with';
 $lang['en_US']['RSSWidget']['CT'] = 'Custom title for the feed';
 $lang['en_US']['RSSWidget']['NTS'] = 'Number of Items to show';
 $lang['en_US']['RSSWidget']['PLURALNAME'] = array(
@@ -139,18 +133,6 @@ $lang['en_US']['TrackBackPing']['PLURALNAME'] = array(
 );
 $lang['en_US']['TrackBackPing']['SINGULARNAME'] = array(
 	'Track Back Ping',
-	50,
-	'Singular name of the object, used in dropdowns and to generally identify a single object in the interface'
-);
-$lang['en_US']['TrackBackULR']['NO'] = 'No';
-$lang['en_US']['TrackBackULR']['YES'] = 'Yes';
-$lang['en_US']['TrackBackURL']['PLURALNAME'] = array(
-	'Track Back U R Ls',
-	50,
-	'Pural name of the object, used in dropdowns and to generally identify a collection of this object in the interface'
-);
-$lang['en_US']['TrackBackURL']['SINGULARNAME'] = array(
-	'Track Back U R L',
 	50,
 	'Singular name of the object, used in dropdowns and to generally identify a single object in the interface'
 );

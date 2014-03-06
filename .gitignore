@@ -4,3 +4,4 @@ assets/*
 mysite/_config.php
 logs/*
 .htaccess
+/nbproject/private/

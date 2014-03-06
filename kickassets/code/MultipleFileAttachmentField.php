@@ -29,6 +29,8 @@ class MultipleFileAttachmentField extends KickAssetField {
 	 */
 	public function FieldHolder() {
 		if ($this->getForm()->getRecord()->hasExtension('ManyManySortable')){
+			Requirements::javascript(THIRDPARTY_DIR.'/jquery/jquery.js');
+			Requirements::javascript(THIRDPARTY_DIR.'/jquery-livequery/jquery.livequery.js');
 			Requirements::javascript(SAPPHIRE_DIR ."/thirdparty/jquery-ui/jquery-ui-1.8rc3.custom.js");
 			Requirements::javascript('kickassets/javascript/manymanysortable.js');
 		}
@@ -70,7 +72,7 @@ class MultipleFileAttachmentField extends KickAssetField {
 			$files = new DataObjectSet();
 			$implodestring = implode(',',$ids);
 			$implodestring = preg_replace("/^[,]/", "", $implodestring);
-			if($set = DataObject::get("File", "`ID` IN ($implodestring)")) {
+			if($set = DataObject::get("File", "`File`.`ID` IN ($implodestring)")) {
 				foreach($set as $file) {
 					$this->processFile($file);
 					$files->push($file);					

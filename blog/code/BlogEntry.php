@@ -6,7 +6,7 @@
  */
 class BlogEntry extends Page {
 	static $db = array(
-		"Date" => "Datetime",
+		"Date" => "SS_Datetime",
 		"Author" => "Text",
 		"Tags" => "Text"
 	);
@@ -31,9 +31,7 @@ class BlogEntry extends Page {
 	);
 	
 	static $extensions = array(
-		'Hierarchy',
-		'TrackBackDecorator',
-		"Versioned('Stage', 'Live')"
+		'TrackBackDecorator'
 	);
 		
 	/**

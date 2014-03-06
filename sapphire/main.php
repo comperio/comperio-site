@@ -54,18 +54,15 @@ if(version_compare(phpversion(), 5, '<')) {
  * @see Director::direct()
  */
 
+/**
+ * Include the defines that set BASE_PATH, etc
+ */
+require_once('core/Constants.php');
 
 /**
- * Include Sapphire's core code
+ * Figure out the request URL
  */
-require_once("core/Core.php");
-
-if (function_exists('mb_http_output')) {
-	mb_http_output('UTF-8');
-	mb_internal_encoding('UTF-8');
-}
-
-Session::start();
+global $url;
 
 // IIS will sometimes generate this.
 if(!empty($_SERVER['HTTP_X_ORIGINAL_URL'])) {
@@ -80,8 +77,8 @@ if (isset($_GET['url'])) {
 	if($i !== false) {
 		$url = substr($url, 0, $i);
 	}
-	
-// Lighttpd uses this
+
+	// Lighttpd uses this
 } else {
 	if(strpos($_SERVER['REQUEST_URI'],'?') !== false) {
 		list($url, $query) = explode('?', $_SERVER['REQUEST_URI'], 2);
@@ -95,14 +92,90 @@ if (isset($_GET['url'])) {
 // Remove base folders from the URL if webroot is hosted in a subfolder
 if (substr(strtolower($url), 0, strlen(BASE_URL)) == strtolower(BASE_URL)) $url = substr($url, strlen(BASE_URL));
 
-if (isset($_GET['debug_profile'])) {
-	Profiler::init();
-	Profiler::mark('all_execution');
-	Profiler::mark('main.php init');
+/**
+ * Include SilverStripe's core code
+ */
+require_once('core/startup/ErrorControlChain.php');
+require_once('core/startup/ParameterConfirmationToken.php');
+
+$chain = new ErrorControlChain();
+$token = new ParameterConfirmationToken('flush');
+
+function silverstripe_main($chain) {
+	global $token;
+
+	if (isset($_GET['flush']) && !$token->tokenProvided()) {
+		unset($_GET['flush']);
+	}
+	else {
+		$chain->setSuppression(false);
+	}
+
+	/**
+	 * Include Sapphire's core code
+	 */
+	require_once("core/Core.php");
+
+	if (function_exists('mb_http_output')) {
+		mb_http_output('UTF-8');
+		mb_internal_encoding('UTF-8');
+	}
+
+	Session::start();
+
+	if (isset($_GET['debug_profile'])) {
+		Profiler::init();
+		Profiler::mark('all_execution');
+		Profiler::mark('main.php init');
+	}
+
+	// Connect to database
+	require_once("core/model/DB.php");
+	global $databaseConfig;
+
+	if (isset($_GET['debug_profile'])) Profiler::mark('DB::connect');
+	if ($databaseConfig) DB::connect($databaseConfig);
+	if (isset($_GET['debug_profile'])) Profiler::unmark('DB::connect');
+
+	if ($token->parameterProvided() && !$token->tokenProvided()) {
+		// First, check if we're in dev mode, or the database doesn't have any security data
+		$canFlush = Director::isDev() || !Security::database_is_ready();
+
+		// Otherwise, we start up the session if needed, then check for admin
+		if (!$canFlush) {
+			if(!isset($_SESSION) && (isset($_COOKIE[session_name()]) || isset($_REQUEST[session_name()]))) {
+				Session::start();
+			}
+
+			if (Permission::check('ADMIN')) {
+				$canFlush = true;
+			}
+			else {
+				$loginPage = Director::absoluteURL('Security/login');
+				$loginPage .= "?BackURL=" . urlencode($_SERVER['REQUEST_URI']);
+
+				header('location: '.$loginPage, true, 302);
+				die;
+			}
+		}
+
+		// And if we can flush, reload with an authority token
+		if ($canFlush) $token->reloadWithToken();
+	}
 }
 
-// Connect to database
-require_once("core/model/DB.php");
+function silverstripe_main_flushOnError() {
+	global $token;
+
+	if ($token->parameterProvided() && !$token->tokenProvided()) {
+		$token->reloadWithToken();
+	}
+}
+
+$chain
+	->then('silverstripe_main')
+	->thenIfErrored('silverstripe_main_flushOnError')
+	->execute();
 
 // Redirect to the installer if no database is selected
 if(!isset($databaseConfig) || !isset($databaseConfig['database']) || !$databaseConfig['database']) {
@@ -116,10 +189,6 @@ if(!isset($databaseConfig) || !isset($databaseConfig['database']) || !$databaseC
 	header("Location: $installURL");
 	die();
 }
-
-if (isset($_GET['debug_profile'])) Profiler::mark('DB::connect');
-DB::connect($databaseConfig);
-if (isset($_GET['debug_profile'])) Profiler::unmark('DB::connect');
 
 if (isset($_GET['debug_profile'])) Profiler::unmark('main.php init');
 

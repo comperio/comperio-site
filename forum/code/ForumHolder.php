@@ -699,7 +699,7 @@ class ForumHolder_Controller extends Page_Controller {
 
 		if(!isset($_SERVER['HTTP_IF_MODIFIED_SINCE']) && !isset($_SERVER['HTTP_IF_NONE_MATCH'])) {
 			// just to get the version data..
-			$this->getNewPostsAvailable(null, null, $forumID, $threadID, &$data);
+			$this->getNewPostsAvailable(null, null, $forumID, $threadID, $data);
 			
 			// No information provided by the client, just return the last posts
 			$rss = new RSSFeed(

@@ -24,15 +24,12 @@
         <div class="navbar navbar-fixed-top">
             <% include Navigation %>
         </div>
-        
-            
-                $Layout
-                
+            $Layout
          <div class="push"></div>
         </div>
         <% include Footer %>
 
-        <script type="text/javascript" src="themes/comperio/js/jquery-1.7.js"></script>
+        <script type="text/javascript" src="themes/comperio/js/jquery-1.11.0.js"></script>
         <script type="text/javascript" src="themes/comperio/js/bootstrap.js"></script>
 
         <script type="text/javascript">
@@ -47,17 +44,18 @@
                     });
                 };
 
-                $(".collapse").collapse();
+                $(".navbar-collapse").collapse('hide');
 
                 if ($('.alert').length > 0){
                     $(".alert").alert();
                 };
                 
                 if ($('.thumbnails li').length > 0){
-                    $('.thumbnails li').popover({
+                    $('[data-toggle="popover"]').popover();
+                    /*$('.thumbnails li').popover({
                         selector: "div[rel=popover]",
                         placement: "left"
-                    });
+                    });*/
                 };
 
                 // On window load. This waits until images have loaded which is essential

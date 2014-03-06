@@ -25,7 +25,6 @@ class SubscribeRSSWidget extends Widget {
 		Requirements::themedCSS('subscribersswidget');
 		$container = BlogTree::current();
 		if ($container) return $container->Link() . 'rss';
-		
 	}
 }
 

@@ -101,6 +101,7 @@ $lang['en_US']['CMSMain']['CHOOSEREPORT'] = '(Choose a report)';
 $lang['en_US']['CMSMain']['COMPARINGV'] = 'Comparing versions %s and %s';
 $lang['en_US']['CMSMain']['COPYPUBTOSTAGE'] = 'Do you really want to copy the published content to the stage site?';
 $lang['en_US']['CMSMain']['DESCREMOVED'] = 'and %s descendants';
+$lang['en_US']['CMSMain']['EMAIL'] = 'Email';
 $lang['en_US']['CMSMain']['GO'] = 'Go';
 $lang['en_US']['CMSMain']['MENUTITLE'] = array(
 	'Pages',
@@ -138,9 +139,9 @@ $lang['en_US']['CMSMain']['RESTORED'] = array(
 	PR_MEDIUM,
 	'Param %s is a title'
 );
+$lang['en_US']['CMSMain']['ROLLBACK'] = 'Roll back to this version';
 $lang['en_US']['CMSMain']['ROLLEDBACKPUB'] = 'Rolled back to published version. New version number is #%d';
 $lang['en_US']['CMSMain']['ROLLEDBACKVERSION'] = 'Rolled back to version #%d.  New version number is #%d';
-$lang['en_US']['CMSMain']['SAVEDSITECONFIGURATION'] = 'Saved site configuration';
 $lang['en_US']['CMSMain']['STATUSOPT'] = 'Status';
 $lang['en_US']['CMSMain']['TITLEOPT'] = 'Title';
 $lang['en_US']['CMSMain']['TOTALPAGES'] = 'Total pages: ';
@@ -153,6 +154,7 @@ $lang['en_US']['CMSMain']['VIEWING'] = array(
 	PR_MEDIUM,
 	'Version number is a linked string, created is a relative time (e.g. 2 days ago), by a specific author'
 );
+$lang['en_US']['CMSMain']['SAVEDSITECONFIGURATION'] = 'Saved site configuration';
 $lang['en_US']['CMSMain_dialog.ss']['BUTTONNOTFOUND'] = 'Couldn\'t find the button name';
 $lang['en_US']['CMSMain_dialog.ss']['NOLINKED'] = 'Can\'t find window.linkedObject to send the button click back to the main window';
 $lang['en_US']['CMSMain_left.ss']['ADDEDNOTPUB'] = 'Added to the draft site and not published yet';
@@ -342,6 +344,26 @@ $lang['en_US']['MemberImportForm']['ResultCreated'] = 'Created %d members';
 $lang['en_US']['MemberImportForm']['ResultDeleted'] = 'Deleted %d members';
 $lang['en_US']['MemberImportForm']['ResultNone'] = 'No changes';
 $lang['en_US']['MemberImportForm']['ResultUpdated'] = 'Updated %d members';
+$lang['en_US']['MemberList.ss']['FILTER'] = array(
+	'Filter',
+	50,
+	'Filter as a verb'
+);
+$lang['en_US']['MemberList_PageControls.ss']['DISPLAYING'] = 'Displaying';
+$lang['en_US']['MemberList_PageControls.ss']['FIRSTMEMBERS'] = 'members';
+$lang['en_US']['MemberList_PageControls.ss']['LASTMEMBERS'] = 'members';
+$lang['en_US']['MemberList_PageControls.ss']['NEXTMEMBERS'] = 'members';
+$lang['en_US']['MemberList_PageControls.ss']['OF'] = 'of';
+$lang['en_US']['MemberList_PageControls.ss']['PREVIOUSMEMBERS'] = 'members';
+$lang['en_US']['MemberList_PageControls.ss']['TO'] = 'to';
+$lang['en_US']['MemberList_PageControls.ss']['VIEWFIRST'] = 'View first';
+$lang['en_US']['MemberList_PageControls.ss']['VIEWLAST'] = 'View last';
+$lang['en_US']['MemberList_PageControls.ss']['VIEWNEXT'] = 'View next';
+$lang['en_US']['MemberList_PageControls.ss']['VIEWPREVIOUS'] = 'View previous';
+$lang['en_US']['MemberList_Table.ss']['EMAIL'] = 'Email Address';
+$lang['en_US']['MemberList_Table.ss']['FN'] = 'First Name';
+$lang['en_US']['MemberList_Table.ss']['PASSWD'] = 'Password';
+$lang['en_US']['MemberList_Table.ss']['SN'] = 'Surname';
 $lang['en_US']['MemberTableField']['ADD'] = 'Add';
 $lang['en_US']['MemberTableField']['ADDEDTOGROUP'] = 'Added member to group';
 $lang['en_US']['MemberTableField']['ADDINGFIELD'] = 'Adding failed';

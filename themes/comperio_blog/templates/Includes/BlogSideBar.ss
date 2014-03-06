@@ -1,3 +1,3 @@
-<div id="Sidebar" class="span3">
+<div id="Sidebar" class="col-md-3">
 	$SideBar
 </div>

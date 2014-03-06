@@ -93,7 +93,8 @@ class CommentAdmin extends LeftAndMain {
 		$table->setParentClass(false);
 		$table->setFieldCasting(array(
 			'Created' => 'SS_Datetime->Full',
-			'Comment' => array('HTMLText->LimitCharacters', 150)
+			'Comment' => array('HTMLText->LimitCharacters', 150),
+			'Parent.Title' => 'Text',
 		));
 		
 		$table->setPageSize(self::get_comments_per_page());
@@ -148,11 +149,14 @@ class CommentAdmin extends LeftAndMain {
 				user_error("No comments in $commentList could be found!", E_USER_ERROR);
 			}
 
-			echo <<<JS
+			$js = <<<JS
 				$deleteList
 				$('Form_EditForm').getPageFromServer($('Form_EditForm_ID').value);
 				statusMessage("Deleted $numComments comments.");
 JS;
+			
+			FormResponse::add($js);
+			return FormResponse::respond();
 	}
 
 	function deleteall() {
@@ -168,10 +172,13 @@ JS;
 		}
 
 		$msg = sprintf(_t('CommentAdmin.DELETED', 'Deleted %s comments.'), $numComments);
-		echo <<<JS
+		$js = <<<JS
 				$('Form_EditForm').getPageFromServer($('Form_EditForm_ID').value);
 				statusMessage("$msg");
 JS;
+		
+		FormResponse::add($js);
+		return FormResponse::respond();
 
 	}
 
@@ -207,11 +214,13 @@ JS;
 			}
 
 			$msg = sprintf(_t('CommentAdmin.MARKEDSPAM', 'Marked %s comments as spam.'), $numComments);
-			echo <<<JS
+			$js = <<<JS
 				$deleteList
 				$('Form_EditForm').getPageFromServer($('Form_EditForm_ID').value);
 				statusMessage("$msg");
 JS;
+			FormResponse::add($js);
+			return FormResponse::respond();
 	}
 
 	function hammarked() {
@@ -247,11 +256,13 @@ JS;
 			}
 
 			$msg = sprintf(_t('CommentAdmin.MARKEDNOTSPAM', 'Marked %s comments as not spam.'), $numComments);
-			echo <<<JS
+			$js = <<<JS
 				$deleteList
 				$('Form_EditForm').getPageFromServer($('Form_EditForm_ID').value);
 				statusMessage("$msg");
 JS;
+			FormResponse::add($js);
+			return FormResponse::respond();
 	}
 
 	function acceptmarked() {
@@ -274,11 +285,14 @@ JS;
 			}
 
 			$msg = sprintf(_t('CommentAdmin.APPROVED', 'Accepted %s comments.'), $numComments);
-			echo <<<JS
+			$js = <<<JS
 				$deleteList
 				$('Form_EditForm').getPageFromServer($('Form_EditForm_ID').value);
 				statusMessage("Accepted $numComments comments.");
 JS;
+			
+			FormResponse::add($js);
+			return FormResponse::respond();
 	}
 
 	/**

@@ -1,25 +1,25 @@
 <div class="blog container" role="main" id="main">
     <div class="row-fluid">
-        <div id="BlogContent" class="span9">
+        <div id="BlogContent" class="col-md-9">
 
             <% include BreadCrumbs %>
                        
             <div class="blogEntry">
                 <div class="row-fluid">
-                    <div class="span8">
+                    <div class="col-md-8">
                         <% if AttachedImage %>
                             <% control AttachedImage %><img class="featuredImage" src="$SetWidth(150).URL" alt="$Title" /><% end_control %>
                         <% end_if %> 
                         <h2 class="postTitle">$Title</h2>
                     </div>
-                    <div class="span4">
-                        <ul class="postMeta unstyled">
-                            <li rel="tooltip" title="Date posted"><i class="icon-calendar"></i>$Date.FormatI18N(%e %B %Y)</li>
-                            <li rel="tooltip" title="Posted by"><i class="icon-user"></i>$Author.XML</li>
-                            <% if ProvideComments %><li rel="tooltip" title="Comments number"><i class="icon-comment"></i>$Comments.Count</li><% end_if %>
+                    <div class="col-md-4">
+                        <ul class="postMeta list-unstyled">
+                            <li rel="tooltip" title="Date posted"><i class="glyphicon glyphicon-calendar"></i>$Date.FormatI18N(%e %B %Y)</li>
+                            <li rel="tooltip" title="Posted by"><i class="glyphicon glyphicon-user"></i>$Author.XML</li>
+                            <% if ProvideComments %><li rel="tooltip" title="Comments number"><i class="glyphicon glyphicon-comment"></i>$Comments.Count</li><% end_if %>
                             <% if TagsCollection %>
                             <li rel="tooltip" title="Tags" class="tags">
-                                <i class="icon-tags"></i><% _t('TAGS', 'Tags:') %> 
+                                <i class="glyphicon glyphicon-tags"></i><% _t('TAGS', 'Tags:') %> 
                                 <% control TagsCollection %>
                                 <a href="$Link" title="<% _t('VIEWALLPOSTTAGGED', 'View all posts tagged') %> '$Tag'" rel="tag">$Tag</a><% if Last %><% else %>,<% end_if %>
                                 <% end_control %>
@@ -31,7 +31,7 @@
 
 
                 <div class="row" style="margin-top:20px">
-                    <div class="span9">
+                    <div class="col-md-9">
                         $Content
                     </div>                    
                 </div>

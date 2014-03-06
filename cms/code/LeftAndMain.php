@@ -831,13 +831,14 @@ JS;
 	public function addTreeNodeJS($page, $select = false) {
 		$parentID = (int)$page->ParentID;
 		$title = Convert::raw2js($page->TreeTitle());
-		$response = <<<JS
+		$js = <<<JS
 var newNode = $('sitetree').createTreeNode($page->ID, "$title", "$page->class");
 var parentNode = $('sitetree').getTreeNodeByIdx($parentID); 
 if(parentNode) parentNode.appendTreeNode(newNode);
 JS;
-		$response .= ($select ? "newNode.selectTreeNode();\n" : "") ;
-		return $response;
+		$js .= ($select ? "newNode.selectTreeNode();\n" : "") ;
+		FormResponse::add($js);
+		return FormResponse::respond();
 	}
 	/**
 	 * Returns a javascript snippet to remove a tree node for the given page, if it exists.
@@ -846,7 +847,7 @@ JS;
 	 */
 	public function deleteTreeNodeJS($page) {
 		$id = $page->ID ? $page->ID : $page->OldID;
-		$response = <<<JS
+		$js = <<<JS
 var node = $('sitetree').getTreeNodeByIdx($id);
 if(node && node.parentTreeNode) node.parentTreeNode.removeTreeNode(node);
 $('Form_EditForm').closeIfSetTo($id);
@@ -857,7 +858,8 @@ JS;
 			$this->setCurrentPageID(null);
 		}
 		
-		return $response;
+		FormResponse::add($js);
+		return FormResponse::respond();
 	}
 
 	/**
@@ -1109,34 +1111,21 @@ JS;
 	/**
 	 * Return the version number of this application.
 	 * Uses the subversion path information in <mymodule>/silverstripe_version
-	 * (automacially replaced $URL$ placeholder).
+	 * (automacially replaced by build scripts).
 	 * 
 	 * @return string
 	 */
 	public function CMSVersion() {
-		$sapphireVersionFile = file_get_contents(BASE_PATH . '/sapphire/silverstripe_version');
-		$cmsVersionFile = file_get_contents(BASE_PATH . '/cms/silverstripe_version');
-		
-		$sapphireVersion = $this->versionFromVersionFile($sapphireVersionFile);
-		$cmsVersion = $this->versionFromVersionFile($cmsVersionFile);
+		$cmsVersion = file_get_contents(BASE_PATH . '/cms/silverstripe_version');
+		$sapphireVersion = file_get_contents(BASE_PATH . '/sapphire/silverstripe_version');
+		if(!$cmsVersion || !$sapphireVersion) return;
 
-		if($sapphireVersion == $cmsVersion) {
+		if($cmsVersion == $sapphireVersion) {
 			return $sapphireVersion;
-		}	else {
-			return "cms: $cmsVersion, sapphire: $sapphireVersion";
-		}
-	}
-	
-	/**
-	 * Return the version from the content of a silverstripe_version file
-	 */
-	public function versionFromVersionFile($fileContent) {
-		if(preg_match('/\/trunk\/silverstripe_version/', $fileContent)) {
-			return "trunk";
 		} else {
-			preg_match("/\/(?:branches|tags\/rc|tags\/beta|tags\/alpha|tags)\/([A-Za-z0-9._-]+)\/silverstripe_version/", $fileContent, $matches);
-			return ($matches) ? $matches[1] : null;
+			return sprintf("cms: %s, sapphire: %s", $cmsVersion, $sapphireVersion);	
 		}
+		
 	}
 	
 	/**

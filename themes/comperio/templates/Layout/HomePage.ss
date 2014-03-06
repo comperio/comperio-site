@@ -1,9 +1,9 @@
 <div class="homepage container" role="main" id="main">
-    <div class="row-fluid clear">    
-        <div class="span4">        
+    <div class="row">    
+        <div class="col-md-4">        
             $Content
         </div>
-        <div class="span8">
+        <div class="col-md-8">
             <div id="myCarousel" class="carousel slide">
                 <!-- Carousel items -->
                 <div class="carousel-inner">
@@ -61,56 +61,65 @@
 
         </div>
     </div>
-    <div class="row-fluid clear">
-        <div class="span4">
-            <div class="hero-unit">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="jumbotron">
                 <% control LastPosts %>
-                <p class="postDate" rel="tooltip" title="Date posted"><i class="icon-calendar"></i>$Date.FormatI18N(%e %B %Y)</p>
-                <h2>$Title</h2>
-                <p>
-                <a class="btn btn-primary btn-medium" href="$Link" title="Read Full Post">
-                    <% _t('Comperio.READALL') %>
-                </a>
-                </p>
+                    <p class="postDate" rel="tooltip" title="Date posted">
+                        <span class="glyphicon glyphicon-calendar"></span>&nbsp;$Date.FormatI18N(%e %B %Y)
+                    </p>
+                    <h2>$Title</h2>
+                    <p>
+                        <a class="btn btn-primary btn-medium" href="$Link" title="Read Full Post">
+                            <% _t('Comperio.READALL') %>
+                        </a>
+                    </p>
                 <% end_control %>
             </div>
         </div> 
-        <div class="span4">            
+        <div class="col-xs-12 col-sm-8 col-md-4" style="padding-left: 0px; margin-top: -20px">            
             <ul class="thumbnails">
-                <li class="span2">
-                    <div class="thumbnail" rel="popover" title="Provincia di Verona" data-content="Sistema Bibliotecario della Provincia di Verona. Gestione del Centro Servizi e del sistema di automazione">
-                        <img class="customer" alt="" src="themes/comperio/img/customers/logo_sbpvr.png">                      
-                    </div>
-                </li>
-                <li class="span2">
-                    <div class="thumbnail" rel="popover" title="CSBNO" data-content="Consorzio Bibliotecarie Nord-Ovest Milano. Utilizzo del gestionale ClavisNG e DiscoveryNG">
-                        <img class="customer" alt="" src="themes/comperio/img/customers/logo_csbno.png">
-                    </div>
-                </li>
-                <li class="span2">
-                    <div class="thumbnail" rel="popover" title="Biblioteche civiche torinesi" data-content="Utilizzo del gestionale ClavisNG e DiscoveryNG">
-                        <img class="customer" alt="" src="themes/comperio/img/customers/logo_torino.png">
-                    </div>
-                </li>
-                <li class="span2">
-                    <div class="thumbnail" rel="popover" title="Regione Valle d'Aosta" data-content="Utilizzo del gestionale ClavisNG e DiscoveryNG">
-                        <img class="customer" alt="" src="themes/comperio/img/customers/logo_aosta.png">
-                    </div>
-                </li>
-                <li class="span2">
-                    <div class="thumbnail" rel="popover" title="Veneranda Biblioteca Ambrosiana" data-content="Consulenza. Utilizzo del gestionale ClavisNG e DiscoveryNG">
-                        <img class="customer" alt="" src="themes/comperio/img/customers/logo_ambrosiana.png">
-                    </div>
-                </li>
-                <li class="span2">
-                    <div class="thumbnail" rel="popover" title="Biblioinrete" data-content="Utilizzo del gestionale ClavisNG e DiscoveryNG">
-                        <img class="customer" alt="" src="themes/comperio/img/customers/logo_biblioinrete.png">
-                    </div>
-                </li>
+                <div class="row">
+                    <li class="col-xs-6 col-sm-5 col-md-6" data-toggle="popover" data-trigger="hover" data-placement="right" data-original-title="Provincia di Verona" data-content="Sistema Bibliotecario della Provincia di Verona. Gestione del Centro Servizi e del sistema di automazione">
+                        <div class="thumbnail">
+                            <img class="customer" alt="" src="themes/comperio/img/customers/logo_sbpvr.png">
+                        </div>
+                    </li>
+                    <li class="col-xs-6 col-sm-5 col-md-6" data-toggle="popover" data-trigger="hover" data-placement="left" data-original-title="CSBNO" data-content="Consorzio Bibliotecarie Nord-Ovest Milano. Utilizzo del gestionale ClavisNG e DiscoveryNG">
+                        <div class="thumbnail">
+                            <img class="customer" alt="" src="themes/comperio/img/customers/logo_csbno.png">
+                        </div>
+                    </li>
+                </div>
+                <div class="row">                
+                    <li class="col-xs-6 col-sm-5 col-md-6" data-toggle="popover" data-trigger="hover" data-placement="right" data-original-title="Biblioteche civiche torinesi" data-content="Utilizzo del gestionale ClavisNG e DiscoveryNG">
+                        <div class="thumbnail">
+                            <img class="customer" alt="" src="themes/comperio/img/customers/logo_torino.png">
+                        </div>
+                    </li>
+                
+                    <li class="col-xs-6 col-sm-5 col-md-6" data-toggle="popover" data-trigger="hover" data-placement="left" data-original-title="Regione Valle d'Aosta" data-content="Utilizzo del gestionale ClavisNG e DiscoveryNG">
+                        <div class="thumbnail">
+                            <img class="customer" alt="" src="themes/comperio/img/customers/logo_aosta.png">
+                        </div>
+                    </li>
+                </div>
+                <div class="row"> 
+                    <li class="col-xs-6 col-sm-5 col-md-6" data-toggle="popover" data-trigger="hover" data-placement="right" data-original-title="Veneranda Biblioteca Ambrosiana" data-content="Consulenza. Utilizzo del gestionale ClavisNG e DiscoveryNG">
+                        <div class="thumbnail">
+                            <img class="customer" alt="" src="themes/comperio/img/customers/logo_ambrosiana.png">
+                        </div>
+                    </li>
+                    <li class="col-xs-6 col-sm-5 col-md-6" data-toggle="popover" data-trigger="hover" data-placement="left" data-original-title="Biblioinrete" data-content="Utilizzo del gestionale ClavisNG e DiscoveryNG">
+                        <div class="thumbnail">
+                            <img class="customer" alt="" src="themes/comperio/img/customers/logo_biblioinrete.png">
+                        </div>
+                    </li>
+                </div>
             </ul>
             
         </div> 
-        <div class="span4">
+        <div class="col-xs-18 col-sm-4 col-md-4">
             <a class="twitter-timeline"  href="https://twitter.com/ComperioSrl" data-widget-id="268290190525743104">Tweets di @ComperioSrl</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </div>

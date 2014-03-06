@@ -27,7 +27,7 @@ body, p {
     font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
 }
 
-.span9 p, .span9 li{
+.col-md-9 p, .col-md-9 li{
     font-size: 1.1em;
     line-height: 1.5em;
 }
@@ -35,6 +35,63 @@ body, p {
 #myCarousel em{
   float:right;
   color:#fff;
+}
+
+.carousel {
+    line-height: 1;
+}
+
+.carousel-caption {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.75);
+    bottom: 0;
+    left: 0;
+    padding: 10px 15px 5px;
+    position: absolute;
+    right: 0;
+    font-size: 13px;
+    font-family: "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
+    font-size: 13px;
+    text-align: left;
+}
+
+.carousel-caption h4{
+    font-size: 14px;
+    color: inherit;
+    font-family: inherit;
+    font-weight: bold;
+    margin: 0;
+}
+
+.carousel-caption p{
+    font-size: 13px;
+    line-height: 18px;
+    margin: 0 0 9px;
+}
+
+.carousel-control.right {
+    left: auto;
+    right: 15px;
+}
+.carousel-control {
+    background: none repeat scroll 0 0 #222222;
+    border: 3px solid #FFFFFF;
+    border-radius: 23px;
+    color: #FFFFFF;
+    font-size: 60px;
+    font-weight: 100;
+    height: 40px;
+    left: 15px;
+    line-height: 30px;
+    margin-top: -20px;
+    opacity: 0.5;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    width: 40px;
+}
+.carousel-inner a {
+    color: #0088CC;
+    text-decoration: none;
 }
 
 #main {
@@ -56,6 +113,7 @@ body, p {
 
 .navbar .brand {
     padding: 0 20px 6px;
+    padding-right: 5px;
 }
 
 .navbar .container {
@@ -64,6 +122,7 @@ body, p {
 
 footer .row{
     padding:0.8em 0 0 0;
+    padding-top: 0px;
 }
 
 footer .row .contacts {
@@ -78,7 +137,10 @@ footer .row .contacts p{
     font-size: small;
     line-height: 15px;
 }
-
+footer h6 {
+    color: #999999;
+    text-transform: uppercase;
+}
 footer h4 {
     color: #999999;
 }
@@ -106,6 +168,11 @@ footer #footer-floor h3, footer #footer-floor h4 {
     text-align: center;
     font-weight: normal;
     letter-spacing: 0.2em;
+}
+footer #footer-floor h3 {
+    font-size: 18px;
+    line-height: 0px;
+    margin-top: 10px;
 }
 
 .required{
@@ -142,35 +209,63 @@ footer #footer-floor h3, footer #footer-floor h4 {
 }
 
 .customer, .img_grayscale {
-    width:160px;
+    width:150px;
 }
 
-#main .hero-unit .postDate {
+#main .jumbotron .postDate {
   font-size:1.1em;
 }
 
-#main .hero-unit .postDate i{
+#main .jumbotron .postDate i{
   margin: 0 5px 0 0;
 }
 
-#main .hero-unit h2 {
+#main .jumbotron h2 {
     margin-bottom: 10px;
 }
 
-.homepage .hero-unit{
+.homepage .row {
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-left: 15px;
+}
+
+.homepage .row .col-md-4 p{
+    line-height: 15px;
+}
+
+.homepage .jumbotron{
   padding: 30px;
+}
+
+.homepage .jumbotron h2{
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 36px;
+    color: inherit;
+    font-family: inherit;
+    font-weight: bold;
+    margin: 0;
 }
 
 /* Add third level to nav-list menu */
 
-.nav > li > a > ul > li > a {
+.navbar > li > a > ul > li > a {
   display: block;
 }
-.nav > li > a:hover {
+
+@media (max-width: 992px) {
+    .navbar-nav li a {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+.navbar > li > a:hover {
   text-decoration: none;
   background-color: #eeeeee;
 }
-.nav .nav-header {
+.navbar .navbar-header {
   display: block;
   padding: 3px 15px;
   font-size: 11px;
@@ -179,30 +274,53 @@ footer #footer-floor h3, footer #footer-floor h4 {
   color: #999999;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
+/*  padding-left: 0px; 
+  padding-right: 0px;*/
 }
-.nav li + .nav-header {
+.navbar li + .navbar-header {
   margin-top: 9px;
 }
-.nav-list {
+
+.navbar-list {
   padding-left: 14px;
   padding-right: 14px;
   margin-bottom: 0;
 }
-.nav-list > li > a, .nav-list .nav-header {
+.navbar-list > li > a, .navbar-list .nav-header {
   margin-left: -15px;
   margin-right: -15px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
-.nav-list > li > a {
+.navbar-list > li > a {
   padding: 3px 15px;
 }
-.nav-list .active > a, .nav-list .active > a:hover {
-  color: #ffffff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-  background-color: #0088cc;
+.navbar-list .active > a, .navbar-list .active > a:hover {
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    background-color: #0088cc;
+    padding-left: 0px;
+    padding-right: 0px;
 }
-.nav-list [class^="icon-"] {
+
+.nav-list {
+    font-size: 13px;
+    line-height: 6px;
+}
+
+.nav-header {
+    border-left-width: 0px; 
+    padding-left: 15px; 
+    padding-bottom: 14px;
+    font-weight: bold;
+}
+
+.navbar-list [class^="icon-"] {
   margin-right: 2px;
+}
+
+.navbar-collapse {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
 }
 
 .linkedBlogEntries h3 em {
@@ -220,4 +338,14 @@ footer #footer-floor h3, footer #footer-floor h4 {
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
      -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnails {
+    margin-left: -55px;
+    margin-right: -15px;
+    list-style: none outside none;
+}
+
+.popover {
+    max-width: 190px;
 }

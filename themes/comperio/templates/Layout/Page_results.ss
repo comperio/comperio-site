@@ -1,6 +1,6 @@
 <div class="page-results container" role="main" id="main">
     <div class="row-fluid">
-        <div class="span9">
+        <div class="col-md-9">
             <h1>$Title</h1>
 
             <% if Results %>
@@ -42,7 +42,7 @@
             </div>
             <% end_if %>
         </div>
-        <div class="span3">
+        <div class="col-md-3">
             <% if Menu(2) %>
             <% include SideBar %>
             <% end_if %>

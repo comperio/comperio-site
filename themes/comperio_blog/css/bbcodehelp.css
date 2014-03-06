@@ -50,7 +50,7 @@ ul.bbcodeExamples li span.example {
 }
 
 #BlogEntry_Form_BlogEntryForm #tagsnote{
-	float:left:
+	float:left;
 	margin: 0;
 	margin-top: -10px;
 	margin-bottom: 10px;

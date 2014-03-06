@@ -84,7 +84,14 @@ class KickAssetAdmin extends LeftAndMain implements PermissionProvider {
 	 */
 	public $editMode = false;
 	
-	
+
+	/**
+	 * Set this to limit files to a certain type.
+	 *
+	 * @var string ClassName to select, eg. 'Folder', 'Image', 'File'
+	 * Default is no limit, which should show all folders and files.
+	 */
+	static $limit_file_type = false;
 	
 	/**
 	 * Loads the requirements, checks perms, etc. If an ID is in the URL, that becomes the
@@ -100,7 +107,7 @@ class KickAssetAdmin extends LeftAndMain implements PermissionProvider {
 		Requirements::css('kickassets/css/kickassets.css');
 		Requirements::javascript('kickassets/javascript/jquery.js');
 		Requirements::javascript(THIRDPARTY_DIR.'/jquery-livequery/jquery.livequery.js');
-		Requirements::javascript('kickassets/javascript/apprise/apprise.js');
+		Requirements::javascript('kickassets/javascript/apprise/apprise-1.5.full.js');
 		Requirements::javascript('kickassets/javascript/jquery.tooltip.js');
 		Requirements::css('kickassets/javascript/apprise/apprise.css');
 		Requirements::javascript('kickassets/javascript/kickassets_ui.js');
@@ -205,6 +212,14 @@ class KickAssetAdmin extends LeftAndMain implements PermissionProvider {
 	 * @return array
 	 */
 	public function browse(SS_HTTPRequest $r) {
+		$limitClass = null;
+		if (!$limitClass && $r->param('OtherID')) {
+			// Pass in through request
+			$limitClass = Convert::raw2sql($r->param('OtherID'));
+		}
+		if ($limitClass) {
+			self::$limit_file_type = $limitClass;
+		}
 		if(Director::is_ajax()) {
 			return $this->renderWith('FileList');
 		}
@@ -285,7 +300,12 @@ class KickAssetAdmin extends LeftAndMain implements PermissionProvider {
 	 */
 	public function updatefilename(SS_HTTPRequest $r) {
 		if($file = DataObject::get_by_id("File", (int) $r->requestVar('fileid'))) {
+			if ($file->Title == $file->Name) {
+				// Make sure title also changes, if old title was same as old Name.
+				$file->Title = $r->requestVar('new');
+			}
 			$file->setName($r->requestVar('new'));
+			$file->Title = $r->requestVar('new'); 
 			$file->write();
 			$template = $file instanceof Folder ? "Folder" : "File";
 			return $this->customise($this->getFields($file))->renderWith($template);
@@ -468,7 +488,13 @@ class KickAssetAdmin extends LeftAndMain implements PermissionProvider {
 	 * @return DataObjectSet
 	 */
 	public function Files() {		
-		$set = DataObject::get("File","ClassName != 'Folder' AND ParentID = {$this->getCurrentFolderID()}");
+		$className = 'File';
+		$where = "ClassName != 'Folder' AND ParentID = {$this->getCurrentFolderID()}";
+		if (self::$limit_file_type) {
+			$className = self::$limit_file_type;
+			$where = "ClassName = '{$className}' AND ParentID = {$this->getCurrentFolderID()}";
+		}
+		$set = DataObject::get($className, $where);
 		if(!$set) return false;
 		$ret = new DataObjectSet();
 		foreach($set as $file) {
@@ -636,18 +662,31 @@ class KickAssetAdmin extends LeftAndMain implements PermissionProvider {
 			new LiteralField('ReplaceFileText','<h4>'._t('KickAssets.REPLACEFILE','Replace file').'</h4><div id="replace-file" data-uploadurl="'.$this->Link("replace/{$this->getCurrentFolderID()}/{$file->ID}").'">'.$filename.'</div>'),
 			new HiddenField('ID','')
 		);
+		
+		foreach ($file->extension_instances as $ext) {
+			$this->updateExtensionCMSFields($ext, $fields);
+		}
+
 		$owner->setEmptyString('('._t('KickAssets.NONE','None').')');
 		$folders->setEmptyString('(root)');
-		if($file->hasMethod('updateCMSFields')) {
-			if(version_compare(PHP_VERSION, '5.3') >= 0) {
-				$file->updateCMSFields(&$fields);	
-			}
-			else {
-				$file->updateCMSFields($fields);	
-			}
-			
-		}
+
 		return $fields;
+	}
+
+	/**
+	 * Allow for the decorator pattern by providing and extend() to updateCMSFields.
+	 * @param Object
+	 * @param FieldSet
+	 */
+	protected function updateExtensionCMSFields($ext, $fields) {
+
+		if(version_compare(PHP_VERSION, '5.3') >= 0) {
+			$ext->updateCMSFields($fields);
+		}
+		else {
+			$ext->updateCMSFields($fields);
+		}
+
 	}
 
 

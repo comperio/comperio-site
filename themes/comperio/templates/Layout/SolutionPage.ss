@@ -1,16 +1,16 @@
 <div class="page container" role="main" id="main">
     <div class="row-fluid">
-        <div class="span9">
+        <div class="col-md-9">
             
             <h1>$Level(2).Title</h1>
             
             <% include SecondaryNav %>
-            
+     
             $Content
             $Form
         </div>
 
-        <div class="span3">
+        <div class="col-md-3">
             <% if Menu(2) %>
             <% include SideBar %>
             <% end_if %>
@@ -21,10 +21,10 @@
                 </h3>
                 <% control LinkedBlogEntries %>
                     <div class="well">
-                        <p class="postDate" rel="tooltip" title="Date posted"><i class="icon-calendar"></i>$Date.FormatI18N(%e %B %Y)</p>
+                        <p class="postDate" rel="tooltip" title="Date posted"><i class="glyphicon glyphicon-calendar"></i>$Date.FormatI18N(%e %B %Y)</p>
                         <h4>$Title</h4>
                         <p>$Content.LimitCharacters(200)</p>                        
-                        <p><a class="btn btn-primary btn-mini" href="$Link" title="Read Full Post">
+                        <p><a class="btn btn-primary btn-sm" href="$Link" title="Read Full Post">
                             Leggi tutto ...
                         </a></p>                        
                     </div>
